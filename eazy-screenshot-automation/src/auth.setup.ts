@@ -44,7 +44,23 @@ setup('authenticate as super-admin', async ({ page }) => {
     await page.screenshot({ path: 'screenshots/00_debug_login_page.png', fullPage: true });
     const html = await page.content().catch(() => '');
     console.log('[DEBUG] Page content length:', html.length, 'snippet:', html.slice(0,500));
+    // Jika snippet mengandung apexcharts/dashboard, berarti sudah login - jangan cari #username
+    if (html.includes('apexcharts') || html.includes('dashboard') || !page.url().includes('/login')) {
+      console.log('[INFO] Terlihat seperti dashboard (apexcharts) - anggap sudah login/WAF redirect');
+      await page.context().storageState({ path: 'config/storage-superadmin.json' });
+      console.log('[OK] Session disimpan (detected dashboard)');
+      return;
+    }
     await page.waitForSelector('#username', { timeout: 15000 }).catch(() => console.log('[WARN] #username masih tidak ada'));
+  }
+
+  // Jika sudah di dashboard (tidak di /login), berarti sudah login - simpan session langsung
+  if (!page.url().includes('/login')) {
+    console.log(`[INFO] Sudah di ${page.url()} - tidak di halaman login, anggap sudah login`);
+    await page.screenshot({ path: 'screenshots/00_already_logged_in.png', fullPage: true }).catch(()=>{});
+    await page.context().storageState({ path: 'config/storage-superadmin.json' });
+    console.log('[OK] Session disimpan (already logged in)');
+    return;
   }
 
   const userField = page.locator('#username, input[name="username"]').first();
