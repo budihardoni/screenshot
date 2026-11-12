@@ -19,24 +19,24 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/budihardoni/screenshot/commit/7b9f9b0ec4aa631f65929a8fa60086384ebb4242",
-        "commitHash": "7b9f9b0ec4aa631f65929a8fa60086384ebb4242",
-        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43254634595"
+        "commitHref": "https://github.com/budihardoni/screenshot/commit/90d697da3d0eaf12c7b78f69e3917a7699136850",
+        "commitHash": "90d697da3d0eaf12c7b78f69e3917a7699136850",
+        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43256077494"
       },
       "gitCommit": {
-        "shortHash": "7b9f9b0",
-        "hash": "7b9f9b0ec4aa631f65929a8fa60086384ebb4242",
-        "subject": "fix: handle WAF + selectors (rebase)",
-        "body": "fix: handle WAF + selectors (rebase)\n",
+        "shortHash": "90d697d",
+        "hash": "90d697da3d0eaf12c7b78f69e3917a7699136850",
+        "subject": "fix: handle already-logged-in (WAF redirect to dashboard) + crawler login redirect",
+        "body": "fix: handle already-logged-in (WAF redirect to dashboard) + crawler login redirect\n",
         "author": {
           "name": "Arena Agent",
           "email": "arena@eazy.local",
-          "time": 1794499455000
+          "time": 1794499932000
         },
         "committer": {
           "name": "Arena Agent",
           "email": "arena@eazy.local",
-          "time": 1794499455000
+          "time": 1794499933000
         },
         "branch": "main"
       },
@@ -50,24 +50,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/7b9f9b0ec4aa631f65929a8fa60086384ebb4242",
-            "commitHash": "7b9f9b0ec4aa631f65929a8fa60086384ebb4242",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43254634595"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/90d697da3d0eaf12c7b78f69e3917a7699136850",
+            "commitHash": "90d697da3d0eaf12c7b78f69e3917a7699136850",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43256077494"
           },
           "gitCommit": {
-            "shortHash": "7b9f9b0",
-            "hash": "7b9f9b0ec4aa631f65929a8fa60086384ebb4242",
-            "subject": "fix: handle WAF + selectors (rebase)",
-            "body": "fix: handle WAF + selectors (rebase)\n",
+            "shortHash": "90d697d",
+            "hash": "90d697da3d0eaf12c7b78f69e3917a7699136850",
+            "subject": "fix: handle already-logged-in (WAF redirect to dashboard) + crawler login redirect",
+            "body": "fix: handle already-logged-in (WAF redirect to dashboard) + crawler login redirect\n",
             "author": {
               "name": "Arena Agent",
               "email": "arena@eazy.local",
-              "time": 1794499455000
+              "time": 1794499932000
             },
             "committer": {
               "name": "Arena Agent",
               "email": "arena@eazy.local",
-              "time": 1794499455000
+              "time": 1794499933000
             },
             "branch": "main"
           },
@@ -92,24 +92,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/7b9f9b0ec4aa631f65929a8fa60086384ebb4242",
-            "commitHash": "7b9f9b0ec4aa631f65929a8fa60086384ebb4242",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43254634595"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/90d697da3d0eaf12c7b78f69e3917a7699136850",
+            "commitHash": "90d697da3d0eaf12c7b78f69e3917a7699136850",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43256077494"
           },
           "gitCommit": {
-            "shortHash": "7b9f9b0",
-            "hash": "7b9f9b0ec4aa631f65929a8fa60086384ebb4242",
-            "subject": "fix: handle WAF + selectors (rebase)",
-            "body": "fix: handle WAF + selectors (rebase)\n",
+            "shortHash": "90d697d",
+            "hash": "90d697da3d0eaf12c7b78f69e3917a7699136850",
+            "subject": "fix: handle already-logged-in (WAF redirect to dashboard) + crawler login redirect",
+            "body": "fix: handle already-logged-in (WAF redirect to dashboard) + crawler login redirect\n",
             "author": {
               "name": "Arena Agent",
               "email": "arena@eazy.local",
-              "time": 1794499455000
+              "time": 1794499932000
             },
             "committer": {
               "name": "Arena Agent",
               "email": "arena@eazy.local",
-              "time": 1794499455000
+              "time": 1794499933000
             },
             "branch": "main"
           },
@@ -193,7 +193,7 @@
       "specs": [
         {
           "title": "authenticate as super-admin",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -206,28 +206,9 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 77601,
-                  "error": {
-                    "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#username, input[name=\"username\"]').first() to be visible\u001b[22m\n",
-                    "stack": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#username, input[name=\"username\"]').first() to be visible\u001b[22m\n\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts:53:19",
-                    "location": {
-                      "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts",
-                      "column": 19,
-                      "line": 53
-                    },
-                    "snippet": "  51 |   const passField = page.locator('#password, input[name=\"password\"]').first();\n  52 |   \n> 53 |   await userField.waitFor({ state: 'visible', timeout: 10000 });\n     |                   ^\n  54 |   await userField.fill(username);\n  55 |   await passField.fill(password);\n  56 |   console.log('[INFO] Kredensial terisi');"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts",
-                        "column": 19,
-                        "line": 53
-                      },
-                      "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#username, input[name=\"username\"]').first() to be visible\u001b[22m\n\n\n  51 |   const passField = page.locator('#password, input[name=\"password\"]').first();\n  52 |   \n> 53 |   await userField.waitFor({ state: 'visible', timeout: 10000 });\n     |                   ^\n  54 |   await userField.fill(username);\n  55 |   await passField.fill(password);\n  56 |   console.log('[INFO] Kredensial terisi');\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts:53:19"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 49644,
+                  "errors": [],
                   "stdout": [
                     {
                       "text": "[DEBUG] ENV check: BASE_URL=https://eazy-academic.btpdev.my.id, USERNAME exists=true, PASSWORD exists=true\n"
@@ -248,104 +229,23 @@
                       "text": "[WARN] Selector password tidak muncul, coba tunggu 5 detik lagi (CF challenge)\n"
                     },
                     {
-                      "text": "[DEBUG] Page content length: \u001b[33m355914\u001b[39m snippet: <!DOCTYPE html><html class=\"loaded\" lang=\"en\" data-textdirection=\"ltr\" style=\"--vh: 9px;\"><head><style id=\"apexcharts-css\">@keyframes opaque{0%{opacity:0}to{opacity:1}}.apexcharts-canvas{position:relative;direction:ltr!important;user-select:none;--apexcharts-focus-color: #008FFB}.apexcharts-canvas .apexcharts-theme-dark,.apexcharts-theme-dark.apexcharts-canvas{--apexcharts-focus-color: #FFD500}.apexcharts-canvas.apexcharts-high-contrast,.apexcharts-high-contrast.apexcharts-canvas{--apexcharts-fo\n"
+                      "text": "[DEBUG] Page content length: \u001b[33m355904\u001b[39m snippet: <!DOCTYPE html><html class=\"loaded\" lang=\"en\" data-textdirection=\"ltr\" style=\"--vh: 9px;\"><head><style id=\"apexcharts-css\">@keyframes opaque{0%{opacity:0}to{opacity:1}}.apexcharts-canvas{position:relative;direction:ltr!important;user-select:none;--apexcharts-focus-color: #008FFB}.apexcharts-canvas .apexcharts-theme-dark,.apexcharts-theme-dark.apexcharts-canvas{--apexcharts-focus-color: #FFD500}.apexcharts-canvas.apexcharts-high-contrast,.apexcharts-high-contrast.apexcharts-canvas{--apexcharts-fo\n"
                     },
                     {
-                      "text": "[WARN] #username masih tidak ada\n"
+                      "text": "[INFO] Terlihat seperti dashboard (apexcharts) - anggap sudah login/WAF redirect\n"
+                    },
+                    {
+                      "text": "[OK] Session disimpan (detected dashboard)\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-12T16:05:04.610Z",
+                  "startTime": "2026-11-12T16:12:52.445Z",
                   "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/test-results/auth.setup.ts-authenticate-as-super-admin-super-admin/error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts",
-                    "column": 19,
-                    "line": 53
-                  }
-                },
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 77348,
-                  "error": {
-                    "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#username, input[name=\"username\"]').first() to be visible\u001b[22m\n",
-                    "stack": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#username, input[name=\"username\"]').first() to be visible\u001b[22m\n\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts:53:19",
-                    "location": {
-                      "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts",
-                      "column": 19,
-                      "line": 53
-                    },
-                    "snippet": "  51 |   const passField = page.locator('#password, input[name=\"password\"]').first();\n  52 |   \n> 53 |   await userField.waitFor({ state: 'visible', timeout: 10000 });\n     |                   ^\n  54 |   await userField.fill(username);\n  55 |   await passField.fill(password);\n  56 |   console.log('[INFO] Kredensial terisi');"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts",
-                        "column": 19,
-                        "line": 53
-                      },
-                      "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#username, input[name=\"username\"]').first() to be visible\u001b[22m\n\n\n  51 |   const passField = page.locator('#password, input[name=\"password\"]').first();\n  52 |   \n> 53 |   await userField.waitFor({ state: 'visible', timeout: 10000 });\n     |                   ^\n  54 |   await userField.fill(username);\n  55 |   await passField.fill(password);\n  56 |   console.log('[INFO] Kredensial terisi');\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts:53:19"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "[DEBUG] ENV check: BASE_URL=https://eazy-academic.btpdev.my.id, USERNAME exists=true, PASSWORD exists=true\n"
-                    },
-                    {
-                      "text": "[DEBUG] Available env keys: [\n  \u001b[32m'BASE_URL'\u001b[39m,\n  \u001b[32m'USER'\u001b[39m,\n  \u001b[32m'SUPERADMIN_PASSWORD'\u001b[39m,\n  \u001b[32m'ADMIN_PASSWORD'\u001b[39m,\n  \u001b[32m'GITHUB_BASE_REF'\u001b[39m,\n  \u001b[32m'SUPERADMIN_USERNAME'\u001b[39m,\n  \u001b[32m'GHCUP_INSTALL_BASE_PREFIX'\u001b[39m,\n  \u001b[32m'ADMIN_USERNAME'\u001b[39m\n]\n"
-                    },
-                    {
-                      "text": "[LOGIN] Mencoba login sebagai Super Admin: admin\n"
-                    },
-                    {
-                      "text": "[INFO] Current URL after goto: https://eazy-academic.btpdev.my.id/\n"
-                    },
-                    {
-                      "text": "[INFO] After WAF wait URL: https://eazy-academic.btpdev.my.id/\n"
-                    },
-                    {
-                      "text": "[WARN] Selector password tidak muncul, coba tunggu 5 detik lagi (CF challenge)\n"
-                    },
-                    {
-                      "text": "[DEBUG] Page content length: \u001b[33m355908\u001b[39m snippet: <!DOCTYPE html><html class=\"loaded\" lang=\"en\" data-textdirection=\"ltr\" style=\"--vh: 9px;\"><head><style id=\"apexcharts-css\">@keyframes opaque{0%{opacity:0}to{opacity:1}}.apexcharts-canvas{position:relative;direction:ltr!important;user-select:none;--apexcharts-focus-color: #008FFB}.apexcharts-canvas .apexcharts-theme-dark,.apexcharts-theme-dark.apexcharts-canvas{--apexcharts-focus-color: #FFD500}.apexcharts-canvas.apexcharts-high-contrast,.apexcharts-high-contrast.apexcharts-canvas{--apexcharts-fo\n"
-                    },
-                    {
-                      "text": "[WARN] #username masih tidak ada\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2026-11-12T16:06:22.945Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/test-results/auth.setup.ts-authenticate-as-super-admin-super-admin-retry1/error-context.md"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/test-results/auth.setup.ts-authenticate-as-super-admin-super-admin-retry1/trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts",
-                    "column": 19,
-                    "line": 53
-                  }
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "17e3fe6f4d9d8bd79c6b-8278a0b9e89615d1cbbb",
@@ -370,7 +270,7 @@
           "specs": [
             {
               "title": "01 - Login & validation states",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -381,106 +281,27 @@
                   "projectName": "super-admin",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 27208,
-                      "error": {
-                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Login\")')\u001b[22m\n",
-                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Login\")')\u001b[22m\n\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts:105:52",
-                        "location": {
-                          "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts",
-                          "column": 52,
-                          "line": 105
-                        },
-                        "snippet": "  103 |     \n  104 |     // capture validation: klik login kosong\n> 105 |     await page.locator('button:has-text(\"Login\")').click();\n      |                                                    ^\n  106 |     await page.waitForTimeout(800);\n  107 |     await shot(page, 'screenshots/01_login/login_validation_error.png');\n  108 |   });"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts",
-                            "column": 52,
-                            "line": 105
-                          },
-                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Login\")')\u001b[22m\n\n\n  103 |     \n  104 |     // capture validation: klik login kosong\n> 105 |     await page.locator('button:has-text(\"Login\")').click();\n      |                                                    ^\n  106 |     await page.waitForTimeout(800);\n  107 |     await shot(page, 'screenshots/01_login/login_validation_error.png');\n  108 |   });\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts:105:52"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 12722,
+                      "errors": [],
                       "stdout": [
                         {
-                          "text": "📸 screenshots/01_login/login.png\n"
+                          "text": "[INFO] Sudah login, skip validasi login - screenshot dashboard sebagai login\n"
+                        },
+                        {
+                          "text": "📸 screenshots/01_login/login_redirected_to_dashboard.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-12T16:07:41.415Z",
+                      "startTime": "2026-11-12T16:13:42.185Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/test-results/crawler-Eazy-Academic---Fu-d0f19-1---Login-validation-states-super-admin/error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts",
-                        "column": 52,
-                        "line": 105
-                      }
-                    },
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 26266,
-                      "error": {
-                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Login\")')\u001b[22m\n",
-                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Login\")')\u001b[22m\n\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts:105:52",
-                        "location": {
-                          "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts",
-                          "column": 52,
-                          "line": 105
-                        },
-                        "snippet": "  103 |     \n  104 |     // capture validation: klik login kosong\n> 105 |     await page.locator('button:has-text(\"Login\")').click();\n      |                                                    ^\n  106 |     await page.waitForTimeout(800);\n  107 |     await shot(page, 'screenshots/01_login/login_validation_error.png');\n  108 |   });"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts",
-                            "column": 52,
-                            "line": 105
-                          },
-                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Login\")')\u001b[22m\n\n\n  103 |     \n  104 |     // capture validation: klik login kosong\n> 105 |     await page.locator('button:has-text(\"Login\")').click();\n      |                                                    ^\n  106 |     await page.waitForTimeout(800);\n  107 |     await shot(page, 'screenshots/01_login/login_validation_error.png');\n  108 |   });\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts:105:52"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "📸 screenshots/01_login/login.png\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2026-11-12T16:08:09.368Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/test-results/crawler-Eazy-Academic---Fu-d0f19-1---Login-validation-states-super-admin-retry1/error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/test-results/crawler-Eazy-Academic---Fu-d0f19-1---Login-validation-states-super-admin-retry1/trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts",
-                        "column": 52,
-                        "line": 105
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "e374d865165a01102163-c8db41f0ce8cd102e7b6",
@@ -501,10 +322,10 @@
                   "projectName": "super-admin",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1488,
+                      "duration": 1979,
                       "errors": [],
                       "stdout": [
                         {
@@ -516,7 +337,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-12T16:08:36.829Z",
+                      "startTime": "2026-11-12T16:13:54.918Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -526,7 +347,7 @@
               ],
               "id": "e374d865165a01102163-c9ecc000ae33cb6d93b9",
               "file": "crawler.spec.ts",
-              "line": 110,
+              "line": 122,
               "column": 3
             },
             {
@@ -542,10 +363,10 @@
                   "projectName": "super-admin",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 576,
+                      "duration": 1106,
                       "errors": [],
                       "stdout": [
                         {
@@ -554,7 +375,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-12T16:08:38.432Z",
+                      "startTime": "2026-11-12T16:13:56.911Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -564,7 +385,7 @@
               ],
               "id": "e374d865165a01102163-38f56b28b020ff20610f",
               "file": "crawler.spec.ts",
-              "line": 139,
+              "line": 151,
               "column": 3
             },
             {
@@ -580,15 +401,15 @@
                   "projectName": "super-admin",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 569,
+                      "duration": 1082,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-12T16:08:39.026Z",
+                      "startTime": "2026-11-12T16:13:58.024Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -598,7 +419,7 @@
               ],
               "id": "e374d865165a01102163-754c647faa3799c56f3f",
               "file": "crawler.spec.ts",
-              "line": 207,
+              "line": 219,
               "column": 3
             }
           ]
@@ -608,11 +429,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-12T16:05:04.049Z",
-    "duration": 215596.92200000002,
-    "expected": 3,
+    "startTime": "2026-11-12T16:12:52.091Z",
+    "duration": 67062.49399999999,
+    "expected": 5,
     "skipped": 0,
-    "unexpected": 2,
+    "unexpected": 0,
     "flaky": 0
   }
 }
