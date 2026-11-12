@@ -17,13 +17,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
-          cache-dependency-path: eazy-screenshot-automation/package.json
 
       - name: Install deps
         working-directory: eazy-screenshot-automation
         run: |
-          npm ci
+          npm install
           npx playwright install chromium --with-deps
 
       - name: Auth setup (Super Admin login)
@@ -65,4 +63,5 @@ jobs:
           git add eazy-screenshot-automation/screenshots/ || true
           git diff --staged --quiet || git commit -m "chore: update screenshots [run ${{ github.run_number }}]"
           git push || echo "No changes to push"
+
 
