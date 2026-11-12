@@ -1,0 +1,20 @@
+{
+  "name": "eazy-screenshot-automation",
+  "version": "1.0.0",
+  "description": "Otomasi screenshot lengkap Eazy Academic untuk kebutuhan redesign UI/UX",
+  "type": "module",
+  "scripts": {
+    "install-browsers": "npx playwright install chromium --with-deps",
+    "test": "npx playwright test",
+    "crawl:admin": "ROLE=admin npx playwright test --project=admin",
+    "crawl:dosen": "ROLE=dosen npx playwright test --project=dosen",
+    "crawl:mahasiswa": "ROLE=mahasiswa npx playwright test --project=mahasiswa",
+    "report": "npx playwright show-report"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.52.0",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "dotenv": "^16.4.5"
+  }
+}
