@@ -19,24 +19,24 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/budihardoni/screenshot/commit/90d697da3d0eaf12c7b78f69e3917a7699136850",
-        "commitHash": "90d697da3d0eaf12c7b78f69e3917a7699136850",
-        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43256077494"
+        "commitHref": "https://github.com/budihardoni/screenshot/commit/ac76c27a8220a02a492618b7dde392094443445f",
+        "commitHash": "ac76c27a8220a02a492618b7dde392094443445f",
+        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43256698377"
       },
       "gitCommit": {
-        "shortHash": "90d697d",
-        "hash": "90d697da3d0eaf12c7b78f69e3917a7699136850",
-        "subject": "fix: handle already-logged-in (WAF redirect to dashboard) + crawler login redirect",
-        "body": "fix: handle already-logged-in (WAF redirect to dashboard) + crawler login redirect\n",
+        "shortHash": "ac76c27",
+        "hash": "ac76c27a8220a02a492618b7dde392094443445f",
+        "subject": "chore: update screenshots [run 19]",
+        "body": "chore: update screenshots [run 19]\n",
         "author": {
-          "name": "Arena Agent",
-          "email": "arena@eazy.local",
-          "time": 1794499932000
+          "name": "screenshot-bot",
+          "email": "bot@eazy.local",
+          "time": 1794500040000
         },
         "committer": {
-          "name": "Arena Agent",
-          "email": "arena@eazy.local",
-          "time": 1794499933000
+          "name": "screenshot-bot",
+          "email": "bot@eazy.local",
+          "time": 1794500040000
         },
         "branch": "main"
       },
@@ -50,24 +50,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/90d697da3d0eaf12c7b78f69e3917a7699136850",
-            "commitHash": "90d697da3d0eaf12c7b78f69e3917a7699136850",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43256077494"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/ac76c27a8220a02a492618b7dde392094443445f",
+            "commitHash": "ac76c27a8220a02a492618b7dde392094443445f",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43256698377"
           },
           "gitCommit": {
-            "shortHash": "90d697d",
-            "hash": "90d697da3d0eaf12c7b78f69e3917a7699136850",
-            "subject": "fix: handle already-logged-in (WAF redirect to dashboard) + crawler login redirect",
-            "body": "fix: handle already-logged-in (WAF redirect to dashboard) + crawler login redirect\n",
+            "shortHash": "ac76c27",
+            "hash": "ac76c27a8220a02a492618b7dde392094443445f",
+            "subject": "chore: update screenshots [run 19]",
+            "body": "chore: update screenshots [run 19]\n",
             "author": {
-              "name": "Arena Agent",
-              "email": "arena@eazy.local",
-              "time": 1794499932000
+              "name": "screenshot-bot",
+              "email": "bot@eazy.local",
+              "time": 1794500040000
             },
             "committer": {
-              "name": "Arena Agent",
-              "email": "arena@eazy.local",
-              "time": 1794499933000
+              "name": "screenshot-bot",
+              "email": "bot@eazy.local",
+              "time": 1794500040000
             },
             "branch": "main"
           },
@@ -92,24 +92,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/90d697da3d0eaf12c7b78f69e3917a7699136850",
-            "commitHash": "90d697da3d0eaf12c7b78f69e3917a7699136850",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43256077494"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/ac76c27a8220a02a492618b7dde392094443445f",
+            "commitHash": "ac76c27a8220a02a492618b7dde392094443445f",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43256698377"
           },
           "gitCommit": {
-            "shortHash": "90d697d",
-            "hash": "90d697da3d0eaf12c7b78f69e3917a7699136850",
-            "subject": "fix: handle already-logged-in (WAF redirect to dashboard) + crawler login redirect",
-            "body": "fix: handle already-logged-in (WAF redirect to dashboard) + crawler login redirect\n",
+            "shortHash": "ac76c27",
+            "hash": "ac76c27a8220a02a492618b7dde392094443445f",
+            "subject": "chore: update screenshots [run 19]",
+            "body": "chore: update screenshots [run 19]\n",
             "author": {
-              "name": "Arena Agent",
-              "email": "arena@eazy.local",
-              "time": 1794499932000
+              "name": "screenshot-bot",
+              "email": "bot@eazy.local",
+              "time": 1794500040000
             },
             "committer": {
-              "name": "Arena Agent",
-              "email": "arena@eazy.local",
-              "time": 1794499933000
+              "name": "screenshot-bot",
+              "email": "bot@eazy.local",
+              "time": 1794500040000
             },
             "branch": "main"
           },
@@ -207,7 +207,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 49644,
+                  "duration": 50747,
                   "errors": [],
                   "stdout": [
                     {
@@ -229,7 +229,7 @@
                       "text": "[WARN] Selector password tidak muncul, coba tunggu 5 detik lagi (CF challenge)\n"
                     },
                     {
-                      "text": "[DEBUG] Page content length: \u001b[33m355904\u001b[39m snippet: <!DOCTYPE html><html class=\"loaded\" lang=\"en\" data-textdirection=\"ltr\" style=\"--vh: 9px;\"><head><style id=\"apexcharts-css\">@keyframes opaque{0%{opacity:0}to{opacity:1}}.apexcharts-canvas{position:relative;direction:ltr!important;user-select:none;--apexcharts-focus-color: #008FFB}.apexcharts-canvas .apexcharts-theme-dark,.apexcharts-theme-dark.apexcharts-canvas{--apexcharts-focus-color: #FFD500}.apexcharts-canvas.apexcharts-high-contrast,.apexcharts-high-contrast.apexcharts-canvas{--apexcharts-fo\n"
+                      "text": "[DEBUG] Page content length: \u001b[33m355894\u001b[39m snippet: <!DOCTYPE html><html class=\"loaded\" lang=\"en\" data-textdirection=\"ltr\" style=\"--vh: 9px;\"><head><style id=\"apexcharts-css\">@keyframes opaque{0%{opacity:0}to{opacity:1}}.apexcharts-canvas{position:relative;direction:ltr!important;user-select:none;--apexcharts-focus-color: #008FFB}.apexcharts-canvas .apexcharts-theme-dark,.apexcharts-theme-dark.apexcharts-canvas{--apexcharts-focus-color: #FFD500}.apexcharts-canvas.apexcharts-high-contrast,.apexcharts-high-contrast.apexcharts-canvas{--apexcharts-fo\n"
                     },
                     {
                       "text": "[INFO] Terlihat seperti dashboard (apexcharts) - anggap sudah login/WAF redirect\n"
@@ -240,7 +240,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-12T16:12:52.445Z",
+                  "startTime": "2026-11-12T16:16:24.916Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -284,7 +284,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 12722,
+                      "duration": 12860,
                       "errors": [],
                       "stdout": [
                         {
@@ -296,7 +296,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-12T16:13:42.185Z",
+                      "startTime": "2026-11-12T16:17:15.794Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -325,7 +325,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1979,
+                      "duration": 2084,
                       "errors": [],
                       "stdout": [
                         {
@@ -337,7 +337,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-12T16:13:54.918Z",
+                      "startTime": "2026-11-12T16:17:28.679Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -366,7 +366,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1106,
+                      "duration": 515,
                       "errors": [],
                       "stdout": [
                         {
@@ -375,7 +375,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-12T16:13:56.911Z",
+                      "startTime": "2026-11-12T16:17:30.796Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -404,12 +404,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1082,
+                      "duration": 1176,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-12T16:13:58.024Z",
+                      "startTime": "2026-11-12T16:17:31.330Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -429,8 +429,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-12T16:12:52.091Z",
-    "duration": 67062.49399999999,
+    "startTime": "2026-11-12T16:16:24.327Z",
+    "duration": 68238.87199999999,
     "expected": 5,
     "skipped": 0,
     "unexpected": 0,
