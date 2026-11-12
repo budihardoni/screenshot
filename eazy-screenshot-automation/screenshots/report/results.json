@@ -20,24 +20,24 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/budihardoni/screenshot/commit/09d39c834b4841030866e18abb020b5232bd2aab",
-        "commitHash": "09d39c834b4841030866e18abb020b5232bd2aab",
-        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43247252158"
+        "commitHref": "https://github.com/budihardoni/screenshot/commit/fb3353a75c7febec4146bec65840586e61ab5382",
+        "commitHash": "fb3353a75c7febec4146bec65840586e61ab5382",
+        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43247428350"
       },
       "gitCommit": {
-        "shortHash": "09d39c8",
-        "hash": "09d39c834b4841030866e18abb020b5232bd2aab",
-        "subject": "fix: npm ci -> npm install (no lock file) + remove cache so install succeeds",
-        "body": "fix: npm ci -> npm install (no lock file) + remove cache so install succeeds\n",
+        "shortHash": "fb3353a",
+        "hash": "fb3353a75c7febec4146bec65840586e61ab5382",
+        "subject": "chore: update screenshots [run 4]",
+        "body": "chore: update screenshots [run 4]\n",
         "author": {
-          "name": "Arena Agent",
-          "email": "arena@eazy.local",
-          "time": 1794497000000
+          "name": "screenshot-bot",
+          "email": "bot@eazy.local",
+          "time": 1794497045000
         },
         "committer": {
-          "name": "Arena Agent",
-          "email": "arena@eazy.local",
-          "time": 1794497000000
+          "name": "screenshot-bot",
+          "email": "bot@eazy.local",
+          "time": 1794497045000
         },
         "branch": "main"
       }
@@ -50,24 +50,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/09d39c834b4841030866e18abb020b5232bd2aab",
-            "commitHash": "09d39c834b4841030866e18abb020b5232bd2aab",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43247252158"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/fb3353a75c7febec4146bec65840586e61ab5382",
+            "commitHash": "fb3353a75c7febec4146bec65840586e61ab5382",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43247428350"
           },
           "gitCommit": {
-            "shortHash": "09d39c8",
-            "hash": "09d39c834b4841030866e18abb020b5232bd2aab",
-            "subject": "fix: npm ci -> npm install (no lock file) + remove cache so install succeeds",
-            "body": "fix: npm ci -> npm install (no lock file) + remove cache so install succeeds\n",
+            "shortHash": "fb3353a",
+            "hash": "fb3353a75c7febec4146bec65840586e61ab5382",
+            "subject": "chore: update screenshots [run 4]",
+            "body": "chore: update screenshots [run 4]\n",
             "author": {
-              "name": "Arena Agent",
-              "email": "arena@eazy.local",
-              "time": 1794497000000
+              "name": "screenshot-bot",
+              "email": "bot@eazy.local",
+              "time": 1794497045000
             },
             "committer": {
-              "name": "Arena Agent",
-              "email": "arena@eazy.local",
-              "time": 1794497000000
+              "name": "screenshot-bot",
+              "email": "bot@eazy.local",
+              "time": 1794497045000
             },
             "branch": "main"
           }
@@ -91,24 +91,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/09d39c834b4841030866e18abb020b5232bd2aab",
-            "commitHash": "09d39c834b4841030866e18abb020b5232bd2aab",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43247252158"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/fb3353a75c7febec4146bec65840586e61ab5382",
+            "commitHash": "fb3353a75c7febec4146bec65840586e61ab5382",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43247428350"
           },
           "gitCommit": {
-            "shortHash": "09d39c8",
-            "hash": "09d39c834b4841030866e18abb020b5232bd2aab",
-            "subject": "fix: npm ci -> npm install (no lock file) + remove cache so install succeeds",
-            "body": "fix: npm ci -> npm install (no lock file) + remove cache so install succeeds\n",
+            "shortHash": "fb3353a",
+            "hash": "fb3353a75c7febec4146bec65840586e61ab5382",
+            "subject": "chore: update screenshots [run 4]",
+            "body": "chore: update screenshots [run 4]\n",
             "author": {
-              "name": "Arena Agent",
-              "email": "arena@eazy.local",
-              "time": 1794497000000
+              "name": "screenshot-bot",
+              "email": "bot@eazy.local",
+              "time": 1794497045000
             },
             "committer": {
-              "name": "Arena Agent",
-              "email": "arena@eazy.local",
-              "time": 1794497000000
+              "name": "screenshot-bot",
+              "email": "bot@eazy.local",
+              "time": 1794497045000
             },
             "branch": "main"
           }
@@ -190,8 +190,8 @@
     }
   ],
   "stats": {
-    "startTime": "2026-11-12T15:24:03.726Z",
-    "duration": 19.070999999999913,
+    "startTime": "2026-11-12T15:24:55.234Z",
+    "duration": 21.508000000000038,
     "expected": 0,
     "skipped": 0,
     "unexpected": 0,
