@@ -7,6 +7,7 @@ const BASE_URL = process.env.BASE_URL || 'https://eazy-academic.btpdev.my.id';
 // MODE: Super Admin - 1 kredensial bisa akses semua role/modul
 export default defineConfig({
   testDir: './src',
+  testMatch: '**/*.{spec,setup}.ts',
   timeout: 90_000,
   expect: { timeout: 15_000 },
   fullyParallel: false, // jangan parallel biar tidak kena rate-limit CF
