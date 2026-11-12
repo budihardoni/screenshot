@@ -21,24 +21,24 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/budihardoni/screenshot/commit/8908ba330ea4cebadf0dc0f8ca0233133df10a6f",
-        "commitHash": "8908ba330ea4cebadf0dc0f8ca0233133df10a6f",
-        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43250638374"
+        "commitHref": "https://github.com/budihardoni/screenshot/commit/444dc88aad3ecca035b87ad76d7dd0941c854ad8",
+        "commitHash": "444dc88aad3ecca035b87ad76d7dd0941c854ad8",
+        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43250885377"
       },
       "gitCommit": {
-        "shortHash": "8908ba3",
-        "hash": "8908ba330ea4cebadf0dc0f8ca0233133df10a6f",
-        "subject": "fix: create config folder before auth to avoid storageState ENOENT",
-        "body": "fix: create config folder before auth to avoid storageState ENOENT\n",
+        "shortHash": "444dc88",
+        "hash": "444dc88aad3ecca035b87ad76d7dd0941c854ad8",
+        "subject": "chore: update screenshots [run 10]",
+        "body": "chore: update screenshots [run 10]\n",
         "author": {
-          "name": "Arena Agent",
-          "email": "arena@eazy.local",
-          "time": 1794498125000
+          "name": "screenshot-bot",
+          "email": "bot@eazy.local",
+          "time": 1794498162000
         },
         "committer": {
-          "name": "Arena Agent",
-          "email": "arena@eazy.local",
-          "time": 1794498125000
+          "name": "screenshot-bot",
+          "email": "bot@eazy.local",
+          "time": 1794498162000
         },
         "branch": "main"
       }
@@ -51,24 +51,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/8908ba330ea4cebadf0dc0f8ca0233133df10a6f",
-            "commitHash": "8908ba330ea4cebadf0dc0f8ca0233133df10a6f",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43250638374"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/444dc88aad3ecca035b87ad76d7dd0941c854ad8",
+            "commitHash": "444dc88aad3ecca035b87ad76d7dd0941c854ad8",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43250885377"
           },
           "gitCommit": {
-            "shortHash": "8908ba3",
-            "hash": "8908ba330ea4cebadf0dc0f8ca0233133df10a6f",
-            "subject": "fix: create config folder before auth to avoid storageState ENOENT",
-            "body": "fix: create config folder before auth to avoid storageState ENOENT\n",
+            "shortHash": "444dc88",
+            "hash": "444dc88aad3ecca035b87ad76d7dd0941c854ad8",
+            "subject": "chore: update screenshots [run 10]",
+            "body": "chore: update screenshots [run 10]\n",
             "author": {
-              "name": "Arena Agent",
-              "email": "arena@eazy.local",
-              "time": 1794498125000
+              "name": "screenshot-bot",
+              "email": "bot@eazy.local",
+              "time": 1794498162000
             },
             "committer": {
-              "name": "Arena Agent",
-              "email": "arena@eazy.local",
-              "time": 1794498125000
+              "name": "screenshot-bot",
+              "email": "bot@eazy.local",
+              "time": 1794498162000
             },
             "branch": "main"
           }
@@ -92,24 +92,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/8908ba330ea4cebadf0dc0f8ca0233133df10a6f",
-            "commitHash": "8908ba330ea4cebadf0dc0f8ca0233133df10a6f",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43250638374"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/444dc88aad3ecca035b87ad76d7dd0941c854ad8",
+            "commitHash": "444dc88aad3ecca035b87ad76d7dd0941c854ad8",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43250885377"
           },
           "gitCommit": {
-            "shortHash": "8908ba3",
-            "hash": "8908ba330ea4cebadf0dc0f8ca0233133df10a6f",
-            "subject": "fix: create config folder before auth to avoid storageState ENOENT",
-            "body": "fix: create config folder before auth to avoid storageState ENOENT\n",
+            "shortHash": "444dc88",
+            "hash": "444dc88aad3ecca035b87ad76d7dd0941c854ad8",
+            "subject": "chore: update screenshots [run 10]",
+            "body": "chore: update screenshots [run 10]\n",
             "author": {
-              "name": "Arena Agent",
-              "email": "arena@eazy.local",
-              "time": 1794498125000
+              "name": "screenshot-bot",
+              "email": "bot@eazy.local",
+              "time": 1794498162000
             },
             "committer": {
-              "name": "Arena Agent",
-              "email": "arena@eazy.local",
-              "time": 1794498125000
+              "name": "screenshot-bot",
+              "email": "bot@eazy.local",
+              "time": 1794498162000
             },
             "branch": "main"
           }
@@ -191,8 +191,8 @@
     }
   ],
   "stats": {
-    "startTime": "2026-11-12T15:42:41.571Z",
-    "duration": 132.82299999999998,
+    "startTime": "2026-11-12T15:44:12.383Z",
+    "duration": 128.90599999999995,
     "expected": 0,
     "skipped": 0,
     "unexpected": 0,
