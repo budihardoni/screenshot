@@ -27,26 +27,35 @@ setup('authenticate as super-admin', async ({ page }) => {
 
   console.log(`[LOGIN] Mencoba login sebagai Super Admin: ${username}`);
 
-  // Bypass Cloudflare: tunggu sampai form login benar-benar muncul
-  await page.goto(`${BASE_URL}/login`, { waitUntil: 'commit' });
-  await page.waitForLoadState('domcontentloaded');
-  
-  // Cloudflare challenge bisa 3-5 detik, tunggu selector password
+  // Handle WAF fingerprint (5s) + Cloudflare - situs ini pakai WAF yang reload 3s
+  await page.goto(`${BASE_URL}/login`, { waitUntil: 'domcontentloaded' });
+  console.log(`[INFO] Current URL after goto: ${page.url()}`);
+  // WAF fingerprint butuh 3-5 detik reload, tunggu network idle
+  await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => console.log('[INFO] networkidle timeout, lanjut'));
+  await page.waitForTimeout(4000);
+  console.log(`[INFO] After WAF wait URL: ${page.url()}`);
+
+  // Tunggu form login asli (bukan WAF page) - selector spesifik dari HTML asli
   try {
-    await page.waitForSelector('input[type="password"], input[name="password"]', { timeout: 30000 });
+    await page.waitForSelector('#username, #password, #login-form', { timeout: 30000 });
+    console.log('[OK] Form login terdeteksi');
   } catch {
     console.log('[WARN] Selector password tidak muncul, coba tunggu 5 detik lagi (CF challenge)');
-    await page.waitForTimeout(5000);
     await page.screenshot({ path: 'screenshots/00_debug_login_page.png', fullPage: true });
+    const html = await page.content().catch(() => '');
+    console.log('[DEBUG] Page content length:', html.length, 'snippet:', html.slice(0,500));
+    await page.waitForSelector('#username', { timeout: 15000 }).catch(() => console.log('[WARN] #username masih tidak ada'));
   }
 
-  const userField = page.locator('input[name="username"], input[name="email"], input[type="text"]').first();
-  const passField = page.locator('input[name="password"], input[type="password"]').first();
+  const userField = page.locator('#username, input[name="username"]').first();
+  const passField = page.locator('#password, input[name="password"]').first();
   
+  await userField.waitFor({ state: 'visible', timeout: 10000 });
   await userField.fill(username);
   await passField.fill(password);
+  console.log('[INFO] Kredensial terisi');
 
-  await page.locator('button:has-text("Login"), button[type="submit"]').first().click();
+  await page.locator('#login-button, button.login-button, button:has-text("Login")').first().click();
   
   // Tunggu redirect keluar dari /login
   await page.waitForFunction(() => !window.location.href.includes('/login'), null, { timeout: 20000 }).catch(async () => {
