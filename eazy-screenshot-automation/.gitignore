@@ -1,0 +1,14 @@
+# Secrets - jangan pernah commit
+.env
+config/storage-*.json
+*.log
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
