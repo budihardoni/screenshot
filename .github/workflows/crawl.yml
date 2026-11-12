@@ -45,7 +45,7 @@ jobs:
           SUPERADMIN_PASSWORD: ${{ secrets.SUPERADMIN_PASSWORD }}
           ADMIN_USERNAME: ${{ secrets.SUPERADMIN_USERNAME }}
           ADMIN_PASSWORD: ${{ secrets.SUPERADMIN_PASSWORD }}
-        run: npx playwright test src/auth.setup.ts --project=super-admin
+        run: npx playwright test --project=super-admin -g "authenticate as super-admin"
 
       - name: Crawl & screenshot (Super Admin - all modules)
         working-directory: eazy-screenshot-automation
