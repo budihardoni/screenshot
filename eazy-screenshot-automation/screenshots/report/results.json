@@ -21,24 +21,24 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/budihardoni/screenshot/commit/77a6afae3bc32b05a0a394d8f49782631ac44dba",
-        "commitHash": "77a6afae3bc32b05a0a394d8f49782631ac44dba",
-        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43251452214"
+        "commitHref": "https://github.com/budihardoni/screenshot/commit/6de313c6ecb6f9b51be3a96f83fb071d8d4ebce9",
+        "commitHash": "6de313c6ecb6f9b51be3a96f83fb071d8d4ebce9",
+        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43251734558"
       },
       "gitCommit": {
-        "shortHash": "77a6afa",
-        "hash": "77a6afae3bc32b05a0a394d8f49782631ac44dba",
-        "subject": "fix: add testMatch to include auth.setup.ts so Playwright finds it",
-        "body": "fix: add testMatch to include auth.setup.ts so Playwright finds it\n",
+        "shortHash": "6de313c",
+        "hash": "6de313c6ecb6f9b51be3a96f83fb071d8d4ebce9",
+        "subject": "chore: update screenshots [run 12]",
+        "body": "chore: update screenshots [run 12]\n",
         "author": {
-          "name": "Arena Agent",
-          "email": "arena@eazy.local",
-          "time": 1794498394000
+          "name": "screenshot-bot",
+          "email": "bot@eazy.local",
+          "time": 1794498451000
         },
         "committer": {
-          "name": "Arena Agent",
-          "email": "arena@eazy.local",
-          "time": 1794498396000
+          "name": "screenshot-bot",
+          "email": "bot@eazy.local",
+          "time": 1794498451000
         },
         "branch": "main"
       },
@@ -52,24 +52,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/77a6afae3bc32b05a0a394d8f49782631ac44dba",
-            "commitHash": "77a6afae3bc32b05a0a394d8f49782631ac44dba",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43251452214"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/6de313c6ecb6f9b51be3a96f83fb071d8d4ebce9",
+            "commitHash": "6de313c6ecb6f9b51be3a96f83fb071d8d4ebce9",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43251734558"
           },
           "gitCommit": {
-            "shortHash": "77a6afa",
-            "hash": "77a6afae3bc32b05a0a394d8f49782631ac44dba",
-            "subject": "fix: add testMatch to include auth.setup.ts so Playwright finds it",
-            "body": "fix: add testMatch to include auth.setup.ts so Playwright finds it\n",
+            "shortHash": "6de313c",
+            "hash": "6de313c6ecb6f9b51be3a96f83fb071d8d4ebce9",
+            "subject": "chore: update screenshots [run 12]",
+            "body": "chore: update screenshots [run 12]\n",
             "author": {
-              "name": "Arena Agent",
-              "email": "arena@eazy.local",
-              "time": 1794498394000
+              "name": "screenshot-bot",
+              "email": "bot@eazy.local",
+              "time": 1794498451000
             },
             "committer": {
-              "name": "Arena Agent",
-              "email": "arena@eazy.local",
-              "time": 1794498396000
+              "name": "screenshot-bot",
+              "email": "bot@eazy.local",
+              "time": 1794498451000
             },
             "branch": "main"
           },
@@ -94,24 +94,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/77a6afae3bc32b05a0a394d8f49782631ac44dba",
-            "commitHash": "77a6afae3bc32b05a0a394d8f49782631ac44dba",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43251452214"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/6de313c6ecb6f9b51be3a96f83fb071d8d4ebce9",
+            "commitHash": "6de313c6ecb6f9b51be3a96f83fb071d8d4ebce9",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43251734558"
           },
           "gitCommit": {
-            "shortHash": "77a6afa",
-            "hash": "77a6afae3bc32b05a0a394d8f49782631ac44dba",
-            "subject": "fix: add testMatch to include auth.setup.ts so Playwright finds it",
-            "body": "fix: add testMatch to include auth.setup.ts so Playwright finds it\n",
+            "shortHash": "6de313c",
+            "hash": "6de313c6ecb6f9b51be3a96f83fb071d8d4ebce9",
+            "subject": "chore: update screenshots [run 12]",
+            "body": "chore: update screenshots [run 12]\n",
             "author": {
-              "name": "Arena Agent",
-              "email": "arena@eazy.local",
-              "time": 1794498394000
+              "name": "screenshot-bot",
+              "email": "bot@eazy.local",
+              "time": 1794498451000
             },
             "committer": {
-              "name": "Arena Agent",
-              "email": "arena@eazy.local",
-              "time": 1794498396000
+              "name": "screenshot-bot",
+              "email": "bot@eazy.local",
+              "time": 1794498451000
             },
             "branch": "main"
           },
@@ -222,7 +222,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-12T15:47:25.535Z",
+                  "startTime": "2026-11-12T15:48:57.522Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -236,7 +236,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 8,
+                  "duration": 7,
                   "error": {
                     "message": "Error: Error reading storage state from config/storage-superadmin.json:\nENOENT: no such file or directory, open 'config/storage-superadmin.json'",
                     "stack": "Error: Error reading storage state from config/storage-superadmin.json:\nENOENT: no such file or directory, open 'config/storage-superadmin.json'"
@@ -249,7 +249,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-11-12T15:47:29.680Z",
+                  "startTime": "2026-11-12T15:48:59.900Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -278,8 +278,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-12T15:47:24.801Z",
-    "duration": 5076.860000000001,
+    "startTime": "2026-11-12T15:48:56.858Z",
+    "duration": 3249.2670000000003,
     "expected": 0,
     "skipped": 0,
     "unexpected": 1,
