@@ -19,24 +19,24 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/budihardoni/screenshot/commit/ac76c27a8220a02a492618b7dde392094443445f",
-        "commitHash": "ac76c27a8220a02a492618b7dde392094443445f",
-        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43256698377"
+        "commitHref": "https://github.com/budihardoni/screenshot/commit/1d069459d4771279a3ae84ca6d2c4d43a5ad3708",
+        "commitHash": "1d069459d4771279a3ae84ca6d2c4d43a5ad3708",
+        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43257661294"
       },
       "gitCommit": {
-        "shortHash": "ac76c27",
-        "hash": "ac76c27a8220a02a492618b7dde392094443445f",
-        "subject": "chore: update screenshots [run 19]",
-        "body": "chore: update screenshots [run 19]\n",
+        "shortHash": "1d06945",
+        "hash": "1d069459d4771279a3ae84ca6d2c4d43a5ad3708",
+        "subject": "feat: comprehensive menu discovery (all anchors + debug) to capture all modules",
+        "body": "feat: comprehensive menu discovery (all anchors + debug) to capture all modules\n",
         "author": {
-          "name": "screenshot-bot",
-          "email": "bot@eazy.local",
-          "time": 1794500040000
+          "name": "Arena Agent",
+          "email": "arena@eazy.local",
+          "time": 1794500452000
         },
         "committer": {
-          "name": "screenshot-bot",
-          "email": "bot@eazy.local",
-          "time": 1794500040000
+          "name": "Arena Agent",
+          "email": "arena@eazy.local",
+          "time": 1794500453000
         },
         "branch": "main"
       },
@@ -50,24 +50,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/ac76c27a8220a02a492618b7dde392094443445f",
-            "commitHash": "ac76c27a8220a02a492618b7dde392094443445f",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43256698377"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/1d069459d4771279a3ae84ca6d2c4d43a5ad3708",
+            "commitHash": "1d069459d4771279a3ae84ca6d2c4d43a5ad3708",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43257661294"
           },
           "gitCommit": {
-            "shortHash": "ac76c27",
-            "hash": "ac76c27a8220a02a492618b7dde392094443445f",
-            "subject": "chore: update screenshots [run 19]",
-            "body": "chore: update screenshots [run 19]\n",
+            "shortHash": "1d06945",
+            "hash": "1d069459d4771279a3ae84ca6d2c4d43a5ad3708",
+            "subject": "feat: comprehensive menu discovery (all anchors + debug) to capture all modules",
+            "body": "feat: comprehensive menu discovery (all anchors + debug) to capture all modules\n",
             "author": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794500040000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794500452000
             },
             "committer": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794500040000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794500453000
             },
             "branch": "main"
           },
@@ -92,24 +92,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/ac76c27a8220a02a492618b7dde392094443445f",
-            "commitHash": "ac76c27a8220a02a492618b7dde392094443445f",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43256698377"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/1d069459d4771279a3ae84ca6d2c4d43a5ad3708",
+            "commitHash": "1d069459d4771279a3ae84ca6d2c4d43a5ad3708",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43257661294"
           },
           "gitCommit": {
-            "shortHash": "ac76c27",
-            "hash": "ac76c27a8220a02a492618b7dde392094443445f",
-            "subject": "chore: update screenshots [run 19]",
-            "body": "chore: update screenshots [run 19]\n",
+            "shortHash": "1d06945",
+            "hash": "1d069459d4771279a3ae84ca6d2c4d43a5ad3708",
+            "subject": "feat: comprehensive menu discovery (all anchors + debug) to capture all modules",
+            "body": "feat: comprehensive menu discovery (all anchors + debug) to capture all modules\n",
             "author": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794500040000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794500452000
             },
             "committer": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794500040000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794500453000
             },
             "branch": "main"
           },
@@ -207,7 +207,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 50747,
+                  "duration": 51149,
                   "errors": [],
                   "stdout": [
                     {
@@ -229,7 +229,7 @@
                       "text": "[WARN] Selector password tidak muncul, coba tunggu 5 detik lagi (CF challenge)\n"
                     },
                     {
-                      "text": "[DEBUG] Page content length: \u001b[33m355894\u001b[39m snippet: <!DOCTYPE html><html class=\"loaded\" lang=\"en\" data-textdirection=\"ltr\" style=\"--vh: 9px;\"><head><style id=\"apexcharts-css\">@keyframes opaque{0%{opacity:0}to{opacity:1}}.apexcharts-canvas{position:relative;direction:ltr!important;user-select:none;--apexcharts-focus-color: #008FFB}.apexcharts-canvas .apexcharts-theme-dark,.apexcharts-theme-dark.apexcharts-canvas{--apexcharts-focus-color: #FFD500}.apexcharts-canvas.apexcharts-high-contrast,.apexcharts-high-contrast.apexcharts-canvas{--apexcharts-fo\n"
+                      "text": "[DEBUG] Page content length: \u001b[33m355887\u001b[39m snippet: <!DOCTYPE html><html class=\"loaded\" lang=\"en\" data-textdirection=\"ltr\" style=\"--vh: 9px;\"><head><style id=\"apexcharts-css\">@keyframes opaque{0%{opacity:0}to{opacity:1}}.apexcharts-canvas{position:relative;direction:ltr!important;user-select:none;--apexcharts-focus-color: #008FFB}.apexcharts-canvas .apexcharts-theme-dark,.apexcharts-theme-dark.apexcharts-canvas{--apexcharts-focus-color: #FFD500}.apexcharts-canvas.apexcharts-high-contrast,.apexcharts-high-contrast.apexcharts-canvas{--apexcharts-fo\n"
                     },
                     {
                       "text": "[INFO] Terlihat seperti dashboard (apexcharts) - anggap sudah login/WAF redirect\n"
@@ -240,7 +240,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-12T16:16:24.916Z",
+                  "startTime": "2026-11-12T16:21:43.819Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -265,7 +265,7 @@
         {
           "title": "Eazy Academic - Full Screenshot Crawl",
           "file": "crawler.spec.ts",
-          "line": 94,
+          "line": 72,
           "column": 6,
           "specs": [
             {
@@ -284,11 +284,11 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 12860,
+                      "duration": 12560,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[INFO] Sudah login, skip validasi login - screenshot dashboard sebagai login\n"
+                          "text": "[INFO] Sudah login, skip validasi login\n"
                         },
                         {
                           "text": "📸 screenshots/01_login/login_redirected_to_dashboard.png\n"
@@ -296,7 +296,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-12T16:17:15.794Z",
+                      "startTime": "2026-11-12T16:22:35.092Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -306,7 +306,7 @@
               ],
               "id": "e374d865165a01102163-c8db41f0ce8cd102e7b6",
               "file": "crawler.spec.ts",
-              "line": 100,
+              "line": 77,
               "column": 3
             },
             {
@@ -325,19 +325,34 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2084,
+                      "duration": 6365,
                       "errors": [],
                       "stdout": [
                         {
                           "text": "📸 screenshots/02_dashboard/dashboard.png\n"
                         },
                         {
+                          "text": "[DEBUG] Found 0 total links\n"
+                        },
+                        {
+                          "text": "[]\n"
+                        },
+                        {
+                          "text": "[DEBUG] bodyClasses: permission_denied, navCount: 0\n"
+                        },
+                        {
                           "text": "Found 0 menu URLs\n"
+                        },
+                        {
+                          "text": "[INFO] Found 0 parent menus with submenu\n"
+                        },
+                        {
+                          "text": "📸 screenshots/02_dashboard/dashboard_full.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-12T16:17:28.679Z",
+                      "startTime": "2026-11-12T16:22:47.671Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -347,7 +362,7 @@
               ],
               "id": "e374d865165a01102163-c9ecc000ae33cb6d93b9",
               "file": "crawler.spec.ts",
-              "line": 122,
+              "line": 94,
               "column": 3
             },
             {
@@ -366,16 +381,19 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 515,
+                      "duration": 3471,
                       "errors": [],
                       "stdout": [
+                        {
+                          "text": "[INFO] Loaded 0 links from previous test\n"
+                        },
                         {
                           "text": "Crawling 0 pages...\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-12T16:17:30.796Z",
+                      "startTime": "2026-11-12T16:22:54.050Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -385,7 +403,7 @@
               ],
               "id": "e374d865165a01102163-38f56b28b020ff20610f",
               "file": "crawler.spec.ts",
-              "line": 151,
+              "line": 171,
               "column": 3
             },
             {
@@ -404,12 +422,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1176,
+                      "duration": 2536,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-12T16:17:31.330Z",
+                      "startTime": "2026-11-12T16:22:57.533Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -419,7 +437,7 @@
               ],
               "id": "e374d865165a01102163-754c647faa3799c56f3f",
               "file": "crawler.spec.ts",
-              "line": 219,
+              "line": 259,
               "column": 3
             }
           ]
@@ -429,8 +447,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-12T16:16:24.327Z",
-    "duration": 68238.87199999999,
+    "startTime": "2026-11-12T16:21:43.222Z",
+    "duration": 76898.63100000001,
     "expected": 5,
     "skipped": 0,
     "unexpected": 0,
