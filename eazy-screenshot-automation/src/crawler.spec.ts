@@ -2,32 +2,18 @@ import { test, expect } from '@playwright/test';
 import * as fs from 'fs';
 import * as path from 'path';
 
-/**
- * CRAWLER UTAMA - Menjawab 7 kebutuhan Anda:
- * 1 Dashboard & navigasi utama
- * 2 Seluruh menu & submenu
- * 3 List, detail, tambah, edit
- * 4 Modal, dropdown, tab, filter
- * 5 Form validation & feedback
- * 6 Workflow setiap modul
- * 7 Role & permission (dijalankan per project/role)
- */
-
 const BASE_URL = process.env.BASE_URL || 'https://eazy-academic.btpdev.my.id';
 
-// Helper: screenshot rapi + fullPage + delay
 async function shot(page, filePath: string, opts: any = {}) {
-  await page.waitForTimeout(800); // tunggu animasi
+  await page.waitForTimeout(800);
   await page.waitForLoadState('networkidle', { timeout: 8000 }).catch(() => {});
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
   await page.screenshot({ path: filePath, fullPage: true, animations: 'disabled', ...opts });
   console.log(`📸 ${filePath}`);
 }
 
-// Helper: crawl semua interaksi di satu halaman
 async function captureInteractions(page, basePath: string) {
-  // 1. Dropdown - buka semua
-  const dropdowns = page.locator('[data-bs-toggle="dropdown"], .dropdown-toggle, select');
+  const dropdowns = page.locator('[data-bs-toggle="dropdown"], .dropdown-toggle, select, [role="combobox"]');
   for (let i = 0; i < await dropdowns.count(); i++) {
     try {
       const el = dropdowns.nth(i);
@@ -39,9 +25,7 @@ async function captureInteractions(page, basePath: string) {
       }
     } catch {}
   }
-
-  // 2. Tabs - klik semua tab
-  const tabs = page.locator('[role="tab"], .nav-tabs a, .nav-pills a');
+  const tabs = page.locator('[role="tab"], .nav-tabs a, .nav-pills a, .tabs a');
   for (let i = 0; i < await tabs.count(); i++) {
     try {
       const t = tabs.nth(i);
@@ -52,36 +36,30 @@ async function captureInteractions(page, basePath: string) {
       }
     } catch {}
   }
-
-  // 3. Modals - klik tombol yang membuka modal (Add, Edit, Delete, Detail)
-  const modalTriggers = page.locator('button:has-text("Tambah"), button:has-text("Add"), button:has-text("Edit"), button:has-text("Delete"), a:has-text("Detail")');
+  const modalTriggers = page.locator('button:has-text("Tambah"), button:has-text("Add"), button:has-text("Edit"), button:has-text("Delete"), a:has-text("Detail"), button:has-text("Lihat")');
   for (let i = 0; i < Math.min(await modalTriggers.count(), 5); i++) {
     try {
       const btn = modalTriggers.nth(i);
       if (await btn.isVisible()) {
         await btn.click();
-        await page.waitForSelector('.modal.show, [role="dialog"]', { timeout: 4000 }).catch(() => {});
+        await page.waitForSelector('.modal.show, [role="dialog"], .modal', { timeout: 4000 }).catch(() => {});
         await page.waitForTimeout(800);
         await shot(page, `${basePath}/modal_${i}.png`);
-        // tutup modal
-        const closeBtn = page.locator('.modal .btn-close, .modal button:has-text("Close"), .modal button:has-text("Batal")').first();
+        const closeBtn = page.locator('.modal .btn-close, .modal button:has-text("Close"), .modal button:has-text("Batal"), .btn-close').first();
         if (await closeBtn.isVisible().catch(() => false)) await closeBtn.click();
         else await page.keyboard.press('Escape');
         await page.waitForTimeout(500);
       }
     } catch {}
   }
-
-  // 4. Form validation - trigger dengan submit kosong
   const forms = page.locator('form');
   for (let i = 0; i < await forms.count(); i++) {
     try {
-      const submit = forms.nth(i).locator('button[type="submit"], button:has-text("Simpan")').first();
+      const submit = forms.nth(i).locator('button[type="submit"], button:has-text("Simpan"), button:has-text("Save")').first();
       if (await submit.isVisible()) {
         await submit.click();
         await page.waitForTimeout(800);
-        // jika ada pesan error validasi muncul
-        const hasError = await page.locator('.invalid-feedback, .text-danger, .error').count() > 0;
+        const hasError = await page.locator('.invalid-feedback, .text-danger, .error, [role="alert"]').count() > 0;
         if (hasError) {
           await shot(page, `${basePath}/form_validation_${i}.png`);
         }
@@ -93,119 +71,181 @@ async function captureInteractions(page, basePath: string) {
 
 test.describe('Eazy Academic - Full Screenshot Crawl', () => {
   test.beforeEach(async ({ page }) => {
-    // set extra headers anti-block
     await page.setExtraHTTPHeaders({ 'Accept-Language': 'id-ID' });
   });
 
   test('01 - Login & validation states', async ({ page }) => {
     await page.goto('/login', { waitUntil: 'domcontentloaded' });
     await page.waitForTimeout(2000);
-    // Jika redirect ke dashboard (sudah login), jangan test validasi login
     if (!page.url().includes('/login')) {
-      console.log('[INFO] Sudah login, skip validasi login - screenshot dashboard sebagai login');
+      console.log('[INFO] Sudah login, skip validasi login');
       await shot(page, 'screenshots/01_login/login_redirected_to_dashboard.png');
       return;
     }
     await shot(page, 'screenshots/01_login/login.png');
-    
-    // capture validation: klik login kosong - selector spesifik
     const loginBtn = page.locator('#login-button, button.login-button');
     if (await loginBtn.isVisible().catch(()=>false)) {
       await loginBtn.click();
       await page.waitForTimeout(800);
       await shot(page, 'screenshots/01_login/login_validation_error.png');
-    } else {
-      console.log('[INFO] Login button tidak ada, skip validation');
     }
   });
 
   test('02 - Dashboard & navigasi', async ({ page }) => {
+    // Buka dashboard dengan wait lebih lama untuk SPA
     await page.goto('/dashboard', { waitUntil: 'domcontentloaded' }).catch(() => page.goto('/', { waitUntil: 'domcontentloaded' }));
+    await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(()=>{});
+    await page.waitForTimeout(3000);
     await shot(page, 'screenshots/02_dashboard/dashboard.png');
 
-    // Capture sidebar expanded vs collapsed (jika ada toggle)
-    const toggle = page.locator('[data-bs-toggle], .sidebar-toggle, button:has-text("☰")').first();
-    if (await toggle.isVisible().catch(() => false)) {
-      await toggle.click();
-      await shot(page, 'screenshots/02_dashboard/sidebar_collapsed.png');
-      await toggle.click();
-      await shot(page, 'screenshots/02_dashboard/sidebar_expanded.png');
+    // Coba expand/collapse sidebar
+    const toggleSelectors = ['[data-bs-toggle]', '.sidebar-toggle', '.menu-toggle', 'button:has-text("☰")', '.bx-menu', '#sidebar-toggle'];
+    for (const sel of toggleSelectors) {
+      const toggle = page.locator(sel).first();
+      if (await toggle.isVisible().catch(() => false)) {
+        console.log(`[INFO] Found toggle: ${sel}`);
+        await toggle.click().catch(()=>{});
+        await page.waitForTimeout(1000);
+        await shot(page, 'screenshots/02_dashboard/sidebar_toggled.png');
+        break;
+      }
     }
 
-    // Simpan semua link menu untuk crawl berikutnya
-    const menuLinks = await page.locator('nav a, aside a, .sidebar a').all();
-    const urls: string[] = [];
-    for (const a of menuLinks) {
+    // COMPREHENSIVE MENU DISCOVERY - lebih luas
+    const allLinks = await page.evaluate(() => {
+      // Ambil semua anchor + element dengan href/data-href
+      const anchors = Array.from(document.querySelectorAll('a[href], [data-href], [data-url]'));
+      const data = anchors.map(a => {
+        const href = a.getAttribute('href') || a.getAttribute('data-href') || a.getAttribute('data-url') || '';
+        const text = (a.textContent || a.getAttribute('title') || '').trim().replace(/\s+/g,' ').slice(0,50);
+        const visible = (a as HTMLElement).offsetParent !== null;
+        return { href, text, visible, tag: a.tagName, class: a.className.slice(0,80) };
+      }).filter(x => {
+        if (!x.href) return false;
+        // Filter hanya internal
+        if (x.href.startsWith('http') && !x.href.includes(window.location.hostname)) return false;
+        if (x.href.startsWith('#') || x.href.startsWith('javascript:')) return false;
+        if (x.href.includes('logout') || x.href.includes('login') || x.href.includes('password')) return false;
+        // Hanya yang terlihat atau di menu (kecuali pagination)
+        return true;
+      });
+      // Deduplicate by href
+      const seen = new Set();
+      const uniq = [];
+      for (const d of data) {
+        if (!seen.has(d.href)) { seen.add(d.href); uniq.push(d); }
+      }
+      // Also capture full HTML for debug
+      return { links: uniq, htmlSnippet: document.documentElement.outerHTML.slice(0,2000), bodyClasses: document.body.className, navCount: document.querySelectorAll('nav').length };
+    });
+
+    console.log(`[DEBUG] Found ${allLinks.links.length} total links`);
+    console.log(JSON.stringify(allLinks.links.slice(0,20), null, 2));
+    console.log(`[DEBUG] bodyClasses: ${allLinks.bodyClasses}, navCount: ${allLinks.navCount}`);
+
+    // Simpan semua link
+    fs.mkdirSync('screenshots/report', { recursive: true });
+    fs.writeFileSync('screenshots/report/menu-urls.json', JSON.stringify(allLinks.links, null, 2));
+    fs.writeFileSync('screenshots/report/dashboard-debug.json', JSON.stringify(allLinks, null, 2));
+    console.log(`Found ${allLinks.links.length} menu URLs`);
+
+    // Coba klik parent menu untuk expand submenu (jika ada)
+    const parentMenus = page.locator('.has-submenu, .menu-item.has-children, .nav-item.dropdown, [aria-haspopup="true"]');
+    console.log(`[INFO] Found ${await parentMenus.count()} parent menus with submenu`);
+    for (let i=0; i < Math.min(await parentMenus.count(), 5); i++) {
       try {
-        const href = await a.getAttribute('href');
-        if (href && href.startsWith('/') && !href.includes('logout') && !href.includes('login')) {
-          urls.push(href);
+        const pm = parentMenus.nth(i);
+        if (await pm.isVisible()) {
+          await pm.click().catch(()=>{});
+          await page.waitForTimeout(800);
+          await shot(page, `screenshots/02_dashboard/submenu_${i}.png`);
         }
       } catch {}
     }
-    fs.mkdirSync('screenshots/report', { recursive: true });
-    fs.writeFileSync('screenshots/report/menu-urls.json', JSON.stringify([...new Set(urls)], null, 2));
-    console.log(`Found ${urls.length} menu URLs`);
+
+    // Screenshot expanded sidebar state
+    await page.evaluate(() => window.scrollTo(0,0));
+    await shot(page, 'screenshots/02_dashboard/dashboard_full.png');
   });
 
   test('03 - Crawl semua menu & submenu (otomatis)', async ({ page }) => {
-    // Baca daftar URL dari test sebelumnya atau crawl langsung sidebar
-    await page.goto('/dashboard', { waitUntil: 'domcontentloaded' }).catch(() => page.goto('/', { waitUntil: 'domcontentloaded' }));
-    
-    // Ambil semua link menu secara dinamis (bukan hardcode)
-    const links = await page.evaluate(() => {
-      const anchors = Array.from(document.querySelectorAll('nav a, aside a, .sidebar a, .menu a'));
-      return anchors.map(a => ({ text: (a.textContent||'').trim(), href: a.getAttribute('href') }))
-        .filter(x => x.href && x.href.startsWith('/') && !x.href.includes('logout'));
+    // Baca dari report jika ada, fallback ke evaluasi langsung
+    let links: any[] = [];
+    try {
+      if (fs.existsSync('screenshots/report/menu-urls.json')) {
+        links = JSON.parse(fs.readFileSync('screenshots/report/menu-urls.json','utf-8'));
+        console.log(`[INFO] Loaded ${links.length} links from previous test`);
+      }
+    } catch {}
+
+    if (links.length === 0) {
+      await page.goto('/dashboard', { waitUntil: 'domcontentloaded' }).catch(() => page.goto('/', { waitUntil: 'domcontentloaded' }));
+      await page.waitForTimeout(3000);
+      links = await page.evaluate(() => {
+        const anchors = Array.from(document.querySelectorAll('a[href]'));
+        return anchors.map(a => ({ text: (a.textContent||'').trim(), href: a.getAttribute('href') }))
+          .filter(x => x.href && (x.href.startsWith('/') || x.href.startsWith(window.location.origin)) && !x.href.includes('logout') && !x.href.includes('login'));
+      });
+    }
+
+    // Filter hanya path internal yang unik dan bukan asset
+    links = links.filter(l => {
+      const h = l.href;
+      return !h.endsWith('.css') && !h.endsWith('.js') && !h.endsWith('.png') && !h.endsWith('.jpg') && h.length > 1;
     });
+    // Deduplicate
+    const seen = new Set();
+    links = links.filter(l => { if (seen.has(l.href)) return false; seen.add(l.href); return true; });
+    // Batasi 30 teratas untuk efisiensi (bisa diubah ke unlimited)
+    // links = links.slice(0, 30);
 
     console.log(`Crawling ${links.length} pages...`);
+    fs.writeFileSync('screenshots/report/crawl-plan.json', JSON.stringify(links, null, 2));
 
     for (let idx = 0; idx < links.length; idx++) {
-      const item = links[idx];
-      const safeName = item.text.replace(/[^a-z0-9]/gi, '_').toLowerCase() || `page_${idx}`;
+      const item = Object.assign({ text: `page_${idx}` }, links[idx]);
+      const safeName = item.text.replace(/[^a-z0-9]/gi, '_').toLowerCase().slice(0,30) || `page_${idx}`;
       const folder = `screenshots/03_modules/${String(idx).padStart(2,'0')}_${safeName}`;
       
       try {
-        await page.goto(item.href!, { waitUntil: 'domcontentloaded', timeout: 20000 });
+        const target = item.href.startsWith('http') ? item.href : `${BASE_URL}${item.href.startsWith('/') ? '' : '/'}${item.href}`;
+        console.log(`[${idx+1}/${links.length}] Crawling ${item.href} -> ${folder}`);
+        await page.goto(target, { waitUntil: 'domcontentloaded', timeout: 25000 }).catch(async () => {
+          await page.goto(item.href, { waitUntil: 'domcontentloaded', timeout: 20000 }).catch(()=>{});
+        });
+        await page.waitForLoadState('networkidle', { timeout: 10000 }).catch(()=>{});
         await page.waitForTimeout(1200);
         
-        // 1. List view
         await shot(page, `${folder}/01_list.png`);
-        
-        // 2. Capture interaksi: dropdown, tab, modal, filter
         await captureInteractions(page, folder);
 
-        // 3. Jika ada tabel, klik baris pertama untuk detail
         const firstRow = page.locator('table tbody tr').first();
         if (await firstRow.isVisible().catch(() => false)) {
           const detailBtn = firstRow.locator('a, button').first();
           if (await detailBtn.isVisible().catch(() => false)) {
             await detailBtn.click().catch(() => {});
             await page.waitForTimeout(1000);
-            // jika pindah halaman detail
-            if (!page.url().includes(item.href!)) {
+            if (!page.url().includes(item.href)) {
               await shot(page, `${folder}/02_detail.png`);
-              await page.goBack().catch(() => page.goto(item.href!, { waitUntil: 'domcontentloaded' }));
+              await page.goBack().catch(() => page.goto(target, { waitUntil: 'domcontentloaded' }));
             }
           }
         }
 
-        // 4. Coba buka halaman tambah (jika ada)
-        const tambahBtn = page.locator('a:has-text("Tambah"), button:has-text("Tambah"), a[href*="create"], a[href*="add"]').first();
+        const tambahBtn = page.locator('a:has-text("Tambah"), button:has-text("Tambah"), a[href*="create"], a[href*="add"], a:has-text("Create")').first();
         if (await tambahBtn.isVisible().catch(() => false)) {
           const href = await tambahBtn.getAttribute('href');
           if (href) {
-            await page.goto(href, { waitUntil: 'domcontentloaded' });
+            const createUrl = href.startsWith('http') ? href : `${BASE_URL}${href.startsWith('/')?'':'/'}${href}`;
+            await page.goto(createUrl, { waitUntil: 'domcontentloaded' });
             await shot(page, `${folder}/03_tambah.png`);
-            // trigger validation
             const submit = page.locator('button[type="submit"]').first();
             if (await submit.isVisible().catch(() => false)) {
               await submit.click();
               await page.waitForTimeout(800);
               await shot(page, `${folder}/04_tambah_validation.png`);
             }
-            await page.goto(item.href!, { waitUntil: 'domcontentloaded' });
+            await page.goto(target, { waitUntil: 'domcontentloaded' });
           }
         }
 
@@ -217,12 +257,12 @@ test.describe('Eazy Academic - Full Screenshot Crawl', () => {
   });
 
   test('04 - Workflow & filter states', async ({ page }) => {
-    // Contoh: filter, search, pagination
     await page.goto('/dashboard', { waitUntil: 'domcontentloaded' }).catch(()=>{});
-    const filterInputs = page.locator('input[type="search"], input[placeholder*="Cari"], select');
+    await page.waitForTimeout(2000);
+    const filterInputs = page.locator('input[type="search"], input[placeholder*="Cari"], input[placeholder*="Search"], select');
     if (await filterInputs.count() > 0) {
       await shot(page, 'screenshots/04_workflow/filter_before.png');
-      const search = page.locator('input[type="search"], input[placeholder*="Cari"]').first();
+      const search = page.locator('input[type="search"], input[placeholder*="Cari"], input[placeholder*="Search"]').first();
       if (await search.isVisible().catch(()=>false)) {
         await search.fill('test');
         await page.waitForTimeout(1200);
