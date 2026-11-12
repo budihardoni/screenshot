@@ -21,27 +21,28 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/budihardoni/screenshot/commit/444dc88aad3ecca035b87ad76d7dd0941c854ad8",
-        "commitHash": "444dc88aad3ecca035b87ad76d7dd0941c854ad8",
-        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43250885377"
+        "commitHref": "https://github.com/budihardoni/screenshot/commit/77a6afae3bc32b05a0a394d8f49782631ac44dba",
+        "commitHash": "77a6afae3bc32b05a0a394d8f49782631ac44dba",
+        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43251452214"
       },
       "gitCommit": {
-        "shortHash": "444dc88",
-        "hash": "444dc88aad3ecca035b87ad76d7dd0941c854ad8",
-        "subject": "chore: update screenshots [run 10]",
-        "body": "chore: update screenshots [run 10]\n",
+        "shortHash": "77a6afa",
+        "hash": "77a6afae3bc32b05a0a394d8f49782631ac44dba",
+        "subject": "fix: add testMatch to include auth.setup.ts so Playwright finds it",
+        "body": "fix: add testMatch to include auth.setup.ts so Playwright finds it\n",
         "author": {
-          "name": "screenshot-bot",
-          "email": "bot@eazy.local",
-          "time": 1794498162000
+          "name": "Arena Agent",
+          "email": "arena@eazy.local",
+          "time": 1794498394000
         },
         "committer": {
-          "name": "screenshot-bot",
-          "email": "bot@eazy.local",
-          "time": 1794498162000
+          "name": "Arena Agent",
+          "email": "arena@eazy.local",
+          "time": 1794498396000
         },
         "branch": "main"
-      }
+      },
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "projects": [
@@ -51,34 +52,35 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/444dc88aad3ecca035b87ad76d7dd0941c854ad8",
-            "commitHash": "444dc88aad3ecca035b87ad76d7dd0941c854ad8",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43250885377"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/77a6afae3bc32b05a0a394d8f49782631ac44dba",
+            "commitHash": "77a6afae3bc32b05a0a394d8f49782631ac44dba",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43251452214"
           },
           "gitCommit": {
-            "shortHash": "444dc88",
-            "hash": "444dc88aad3ecca035b87ad76d7dd0941c854ad8",
-            "subject": "chore: update screenshots [run 10]",
-            "body": "chore: update screenshots [run 10]\n",
+            "shortHash": "77a6afa",
+            "hash": "77a6afae3bc32b05a0a394d8f49782631ac44dba",
+            "subject": "fix: add testMatch to include auth.setup.ts so Playwright finds it",
+            "body": "fix: add testMatch to include auth.setup.ts so Playwright finds it\n",
             "author": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794498162000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794498394000
             },
             "committer": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794498162000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794498396000
             },
             "branch": "main"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "super-admin",
         "name": "super-admin",
         "testDir": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src",
         "testIgnore": [],
         "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          "**/*.{spec,setup}.ts"
         ],
         "timeout": 90000
       }
@@ -92,33 +94,34 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/444dc88aad3ecca035b87ad76d7dd0941c854ad8",
-            "commitHash": "444dc88aad3ecca035b87ad76d7dd0941c854ad8",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43250885377"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/77a6afae3bc32b05a0a394d8f49782631ac44dba",
+            "commitHash": "77a6afae3bc32b05a0a394d8f49782631ac44dba",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43251452214"
           },
           "gitCommit": {
-            "shortHash": "444dc88",
-            "hash": "444dc88aad3ecca035b87ad76d7dd0941c854ad8",
-            "subject": "chore: update screenshots [run 10]",
-            "body": "chore: update screenshots [run 10]\n",
+            "shortHash": "77a6afa",
+            "hash": "77a6afae3bc32b05a0a394d8f49782631ac44dba",
+            "subject": "fix: add testMatch to include auth.setup.ts so Playwright finds it",
+            "body": "fix: add testMatch to include auth.setup.ts so Playwright finds it\n",
             "author": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794498162000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794498394000
             },
             "committer": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794498162000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794498396000
             },
             "branch": "main"
-          }
+          },
+          "actualWorkers": 1
         },
         "name": "super-admin",
         "testDir": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src",
         "snapshotDir": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src",
         "testIgnore": [],
-        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "testMatch": "**/*.{spec,setup}.ts",
         "timeout": 90000,
         "use": {
           "baseURL": "https://eazy-academic.btpdev.my.id",
@@ -183,19 +186,103 @@
     "workers": 1,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "Error: No tests found",
-      "stack": "Error: No tests found"
+      "title": "auth.setup.ts",
+      "file": "auth.setup.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "authenticate as super-admin",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "super-admin",
+              "projectName": "super-admin",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8,
+                  "error": {
+                    "message": "Error: Error reading storage state from config/storage-superadmin.json:\nENOENT: no such file or directory, open 'config/storage-superadmin.json'",
+                    "stack": "Error: Error reading storage state from config/storage-superadmin.json:\nENOENT: no such file or directory, open 'config/storage-superadmin.json'"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: Error reading storage state from config/storage-superadmin.json:\nENOENT: no such file or directory, open 'config/storage-superadmin.json'"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-12T15:47:25.535Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/test-results/auth.setup.ts-authenticate-as-super-admin-super-admin/error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8,
+                  "error": {
+                    "message": "Error: Error reading storage state from config/storage-superadmin.json:\nENOENT: no such file or directory, open 'config/storage-superadmin.json'",
+                    "stack": "Error: Error reading storage state from config/storage-superadmin.json:\nENOENT: no such file or directory, open 'config/storage-superadmin.json'"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: Error reading storage state from config/storage-superadmin.json:\nENOENT: no such file or directory, open 'config/storage-superadmin.json'"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-12T15:47:29.680Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/test-results/auth.setup.ts-authenticate-as-super-admin-super-admin-retry1/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/test-results/auth.setup.ts-authenticate-as-super-admin-super-admin-retry1/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "17e3fe6f4d9d8bd79c6b-8278a0b9e89615d1cbbb",
+          "file": "auth.setup.ts",
+          "line": 8,
+          "column": 1
+        }
+      ]
     }
   ],
+  "errors": [],
   "stats": {
-    "startTime": "2026-11-12T15:44:12.383Z",
-    "duration": 128.90599999999995,
+    "startTime": "2026-11-12T15:47:24.801Z",
+    "duration": 5076.860000000001,
     "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
