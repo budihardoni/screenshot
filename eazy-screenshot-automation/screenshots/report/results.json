@@ -21,24 +21,24 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/budihardoni/screenshot/commit/6de313c6ecb6f9b51be3a96f83fb071d8d4ebce9",
-        "commitHash": "6de313c6ecb6f9b51be3a96f83fb071d8d4ebce9",
-        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43251734558"
+        "commitHref": "https://github.com/budihardoni/screenshot/commit/bd1527aede32a12cdd5d5593fde55e041dc94d48",
+        "commitHash": "bd1527aede32a12cdd5d5593fde55e041dc94d48",
+        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43252270328"
       },
       "gitCommit": {
-        "shortHash": "6de313c",
-        "hash": "6de313c6ecb6f9b51be3a96f83fb071d8d4ebce9",
-        "subject": "chore: update screenshots [run 12]",
-        "body": "chore: update screenshots [run 12]\n",
+        "shortHash": "bd1527a",
+        "hash": "bd1527aede32a12cdd5d5593fde55e041dc94d48",
+        "subject": "Set default admin username and password",
+        "body": "Set default admin username and password\n\nUpdated admin credentials in the .env.example file.",
         "author": {
-          "name": "screenshot-bot",
-          "email": "bot@eazy.local",
-          "time": 1794498451000
+          "name": "budihardoni",
+          "email": "budi.hardoni@gmail.com",
+          "time": 1794498672000
         },
         "committer": {
-          "name": "screenshot-bot",
-          "email": "bot@eazy.local",
-          "time": 1794498451000
+          "name": "GitHub",
+          "email": "noreply@github.com",
+          "time": 1794498672000
         },
         "branch": "main"
       },
@@ -52,24 +52,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/6de313c6ecb6f9b51be3a96f83fb071d8d4ebce9",
-            "commitHash": "6de313c6ecb6f9b51be3a96f83fb071d8d4ebce9",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43251734558"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/bd1527aede32a12cdd5d5593fde55e041dc94d48",
+            "commitHash": "bd1527aede32a12cdd5d5593fde55e041dc94d48",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43252270328"
           },
           "gitCommit": {
-            "shortHash": "6de313c",
-            "hash": "6de313c6ecb6f9b51be3a96f83fb071d8d4ebce9",
-            "subject": "chore: update screenshots [run 12]",
-            "body": "chore: update screenshots [run 12]\n",
+            "shortHash": "bd1527a",
+            "hash": "bd1527aede32a12cdd5d5593fde55e041dc94d48",
+            "subject": "Set default admin username and password",
+            "body": "Set default admin username and password\n\nUpdated admin credentials in the .env.example file.",
             "author": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794498451000
+              "name": "budihardoni",
+              "email": "budi.hardoni@gmail.com",
+              "time": 1794498672000
             },
             "committer": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794498451000
+              "name": "GitHub",
+              "email": "noreply@github.com",
+              "time": 1794498672000
             },
             "branch": "main"
           },
@@ -94,24 +94,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/6de313c6ecb6f9b51be3a96f83fb071d8d4ebce9",
-            "commitHash": "6de313c6ecb6f9b51be3a96f83fb071d8d4ebce9",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43251734558"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/bd1527aede32a12cdd5d5593fde55e041dc94d48",
+            "commitHash": "bd1527aede32a12cdd5d5593fde55e041dc94d48",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43252270328"
           },
           "gitCommit": {
-            "shortHash": "6de313c",
-            "hash": "6de313c6ecb6f9b51be3a96f83fb071d8d4ebce9",
-            "subject": "chore: update screenshots [run 12]",
-            "body": "chore: update screenshots [run 12]\n",
+            "shortHash": "bd1527a",
+            "hash": "bd1527aede32a12cdd5d5593fde55e041dc94d48",
+            "subject": "Set default admin username and password",
+            "body": "Set default admin username and password\n\nUpdated admin credentials in the .env.example file.",
             "author": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794498451000
+              "name": "budihardoni",
+              "email": "budi.hardoni@gmail.com",
+              "time": 1794498672000
             },
             "committer": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794498451000
+              "name": "GitHub",
+              "email": "noreply@github.com",
+              "time": 1794498672000
             },
             "branch": "main"
           },
@@ -209,7 +209,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 8,
+                  "duration": 6,
                   "error": {
                     "message": "Error: Error reading storage state from config/storage-superadmin.json:\nENOENT: no such file or directory, open 'config/storage-superadmin.json'",
                     "stack": "Error: Error reading storage state from config/storage-superadmin.json:\nENOENT: no such file or directory, open 'config/storage-superadmin.json'"
@@ -222,7 +222,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-12T15:48:57.522Z",
+                  "startTime": "2026-11-12T15:51:45.058Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -249,7 +249,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-11-12T15:48:59.900Z",
+                  "startTime": "2026-11-12T15:51:45.658Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -278,8 +278,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-12T15:48:56.858Z",
-    "duration": 3249.2670000000003,
+    "startTime": "2026-11-12T15:51:44.595Z",
+    "duration": 1190.286,
     "expected": 0,
     "skipped": 0,
     "unexpected": 1,
