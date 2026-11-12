@@ -24,7 +24,20 @@ jobs:
           npm install
           npx playwright install chromium --with-deps
 
+      - name: Debug Secrets (check without exposing password)
+        working-directory: eazy-screenshot-automation
+        env:
+          BASE_URL: ${{ secrets.BASE_URL }}
+          SUPERADMIN_USERNAME: ${{ secrets.SUPERADMIN_USERNAME }}
+          SUPERADMIN_PASSWORD: ${{ secrets.SUPERADMIN_PASSWORD }}
+        run: |
+          echo "BASE_URL is set: $([ -n "$BASE_URL" ] && echo YES || echo NO)"
+          echo "SUPERADMIN_USERNAME is set: $([ -n "$SUPERADMIN_USERNAME" ] && echo YES || echo NO)"
+          echo "SUPERADMIN_PASSWORD is set: $([ -n "$SUPERADMIN_PASSWORD" ] && echo YES || echo NO)"
+          echo "If any is NO, cek Settings > Secrets > Actions - nama harus exact: SUPERADMIN_USERNAME, SUPERADMIN_PASSWORD, BASE_URL"
+
       - name: Auth setup (Super Admin login)
+
         working-directory: eazy-screenshot-automation
         env:
           BASE_URL: ${{ secrets.BASE_URL }}

@@ -9,8 +9,20 @@ setup('authenticate as super-admin', async ({ page }) => {
   const username = process.env.SUPERADMIN_USERNAME || process.env.ADMIN_USERNAME;
   const password = process.env.SUPERADMIN_PASSWORD || process.env.ADMIN_PASSWORD;
 
+  console.log(`[DEBUG] ENV check: BASE_URL=${BASE_URL}, USERNAME exists=${!!username}, PASSWORD exists=${!!password}`);
+  console.log(`[DEBUG] Available env keys:`, Object.keys(process.env).filter(k => k.includes('ADMIN') || k.includes('BASE') || k.includes('USER')));
+
   if (!username || !password) {
-    throw new Error('SUPERADMIN_USERNAME / SUPERADMIN_PASSWORD belum diisi di .env atau GitHub Secrets. Lihat .env.example');
+    console.error('❌ Kredensial kosong! Pastikan GitHub Secrets berisi: SUPERADMIN_USERNAME, SUPERADMIN_PASSWORD, BASE_URL');
+    console.error('   Current: SUPERADMIN_USERNAME=', process.env.SUPERADMIN_USERNAME, 'ADMIN_USERNAME=', process.env.ADMIN_USERNAME);
+    // Try alternative names for backward compatibility
+    const altUser = process.env.USERNAME || process.env.USER || process.env.SUPER_ADMIN_USERNAME;
+    const altPass = process.env.PASSWORD || process.env.PASS || process.env.SUPER_ADMIN_PASSWORD;
+    if (altUser && altPass) {
+      console.log('[RETRY] Mencoba dengan alt env:', altUser);
+    } else {
+      throw new Error('SUPERADMIN_USERNAME / SUPERADMIN_PASSWORD belum diisi di GitHub Secrets. Cek Settings > Secrets > Actions - harus exact huruf besar. Lihat .env.example');
+    }
   }
 
   console.log(`[LOGIN] Mencoba login sebagai Super Admin: ${username}`);
