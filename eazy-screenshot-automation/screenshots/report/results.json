@@ -4,8 +4,9 @@
       "/opt/hostedtoolcache/node/20.20.2/x64/bin/node",
       "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/node_modules/.bin/playwright",
       "test",
-      "src/auth.setup.ts",
-      "--project=super-admin"
+      "--project=super-admin",
+      "-g",
+      "authenticate as super-admin"
     ],
     "configFile": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/playwright.config.ts",
     "rootDir": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src",
@@ -20,24 +21,24 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/budihardoni/screenshot/commit/2513a468a0d79f4ef139860cbbe7a73197786073",
-        "commitHash": "2513a468a0d79f4ef139860cbbe7a73197786073",
-        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43250069469"
+        "commitHref": "https://github.com/budihardoni/screenshot/commit/8908ba330ea4cebadf0dc0f8ca0233133df10a6f",
+        "commitHash": "8908ba330ea4cebadf0dc0f8ca0233133df10a6f",
+        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43250638374"
       },
       "gitCommit": {
-        "shortHash": "2513a46",
-        "hash": "2513a468a0d79f4ef139860cbbe7a73197786073",
-        "subject": "chore: update screenshots [run 7]",
-        "body": "chore: update screenshots [run 7]\n",
+        "shortHash": "8908ba3",
+        "hash": "8908ba330ea4cebadf0dc0f8ca0233133df10a6f",
+        "subject": "fix: create config folder before auth to avoid storageState ENOENT",
+        "body": "fix: create config folder before auth to avoid storageState ENOENT\n",
         "author": {
-          "name": "screenshot-bot",
-          "email": "bot@eazy.local",
-          "time": 1794497785000
+          "name": "Arena Agent",
+          "email": "arena@eazy.local",
+          "time": 1794498125000
         },
         "committer": {
-          "name": "screenshot-bot",
-          "email": "bot@eazy.local",
-          "time": 1794497785000
+          "name": "Arena Agent",
+          "email": "arena@eazy.local",
+          "time": 1794498125000
         },
         "branch": "main"
       }
@@ -50,24 +51,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/2513a468a0d79f4ef139860cbbe7a73197786073",
-            "commitHash": "2513a468a0d79f4ef139860cbbe7a73197786073",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43250069469"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/8908ba330ea4cebadf0dc0f8ca0233133df10a6f",
+            "commitHash": "8908ba330ea4cebadf0dc0f8ca0233133df10a6f",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43250638374"
           },
           "gitCommit": {
-            "shortHash": "2513a46",
-            "hash": "2513a468a0d79f4ef139860cbbe7a73197786073",
-            "subject": "chore: update screenshots [run 7]",
-            "body": "chore: update screenshots [run 7]\n",
+            "shortHash": "8908ba3",
+            "hash": "8908ba330ea4cebadf0dc0f8ca0233133df10a6f",
+            "subject": "fix: create config folder before auth to avoid storageState ENOENT",
+            "body": "fix: create config folder before auth to avoid storageState ENOENT\n",
             "author": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794497785000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794498125000
             },
             "committer": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794497785000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794498125000
             },
             "branch": "main"
           }
@@ -91,24 +92,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/2513a468a0d79f4ef139860cbbe7a73197786073",
-            "commitHash": "2513a468a0d79f4ef139860cbbe7a73197786073",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43250069469"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/8908ba330ea4cebadf0dc0f8ca0233133df10a6f",
+            "commitHash": "8908ba330ea4cebadf0dc0f8ca0233133df10a6f",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43250638374"
           },
           "gitCommit": {
-            "shortHash": "2513a46",
-            "hash": "2513a468a0d79f4ef139860cbbe7a73197786073",
-            "subject": "chore: update screenshots [run 7]",
-            "body": "chore: update screenshots [run 7]\n",
+            "shortHash": "8908ba3",
+            "hash": "8908ba330ea4cebadf0dc0f8ca0233133df10a6f",
+            "subject": "fix: create config folder before auth to avoid storageState ENOENT",
+            "body": "fix: create config folder before auth to avoid storageState ENOENT\n",
             "author": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794497785000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794498125000
             },
             "committer": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794497785000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794498125000
             },
             "branch": "main"
           }
@@ -185,13 +186,13 @@
   "suites": [],
   "errors": [
     {
-      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
-      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
+      "message": "Error: No tests found",
+      "stack": "Error: No tests found"
     }
   ],
   "stats": {
-    "startTime": "2026-11-12T15:39:29.942Z",
-    "duration": 20.405000000000086,
+    "startTime": "2026-11-12T15:42:41.571Z",
+    "duration": 132.82299999999998,
     "expected": 0,
     "skipped": 0,
     "unexpected": 0,
