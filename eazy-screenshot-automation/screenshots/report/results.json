@@ -4,9 +4,7 @@
       "/opt/hostedtoolcache/node/20.20.2/x64/bin/node",
       "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/node_modules/.bin/playwright",
       "test",
-      "--project=super-admin",
-      "-g",
-      "authenticate as super-admin"
+      "--project=super-admin"
     ],
     "configFile": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/playwright.config.ts",
     "rootDir": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src",
@@ -21,24 +19,24 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/budihardoni/screenshot/commit/bd1527aede32a12cdd5d5593fde55e041dc94d48",
-        "commitHash": "bd1527aede32a12cdd5d5593fde55e041dc94d48",
-        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43252270328"
+        "commitHref": "https://github.com/budihardoni/screenshot/commit/ebd52f9ac6d90c86d6ccf95e84d4d48678bb25da",
+        "commitHash": "ebd52f9ac6d90c86d6ccf95e84d4d48678bb25da",
+        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43252540619"
       },
       "gitCommit": {
-        "shortHash": "bd1527a",
-        "hash": "bd1527aede32a12cdd5d5593fde55e041dc94d48",
-        "subject": "Set default admin username and password",
-        "body": "Set default admin username and password\n\nUpdated admin credentials in the .env.example file.",
+        "shortHash": "ebd52f9",
+        "hash": "ebd52f9ac6d90c86d6ccf95e84d4d48678bb25da",
+        "subject": "fix: handle missing storageState (ENOENT) - create empty JSON + conditional config",
+        "body": "fix: handle missing storageState (ENOENT) - create empty JSON + conditional config\n",
         "author": {
-          "name": "budihardoni",
-          "email": "budi.hardoni@gmail.com",
-          "time": 1794498672000
+          "name": "Arena Agent",
+          "email": "arena@eazy.local",
+          "time": 1794498758000
         },
         "committer": {
-          "name": "GitHub",
-          "email": "noreply@github.com",
-          "time": 1794498672000
+          "name": "Arena Agent",
+          "email": "arena@eazy.local",
+          "time": 1794498760000
         },
         "branch": "main"
       },
@@ -52,24 +50,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/bd1527aede32a12cdd5d5593fde55e041dc94d48",
-            "commitHash": "bd1527aede32a12cdd5d5593fde55e041dc94d48",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43252270328"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/ebd52f9ac6d90c86d6ccf95e84d4d48678bb25da",
+            "commitHash": "ebd52f9ac6d90c86d6ccf95e84d4d48678bb25da",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43252540619"
           },
           "gitCommit": {
-            "shortHash": "bd1527a",
-            "hash": "bd1527aede32a12cdd5d5593fde55e041dc94d48",
-            "subject": "Set default admin username and password",
-            "body": "Set default admin username and password\n\nUpdated admin credentials in the .env.example file.",
+            "shortHash": "ebd52f9",
+            "hash": "ebd52f9ac6d90c86d6ccf95e84d4d48678bb25da",
+            "subject": "fix: handle missing storageState (ENOENT) - create empty JSON + conditional config",
+            "body": "fix: handle missing storageState (ENOENT) - create empty JSON + conditional config\n",
             "author": {
-              "name": "budihardoni",
-              "email": "budi.hardoni@gmail.com",
-              "time": 1794498672000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794498758000
             },
             "committer": {
-              "name": "GitHub",
-              "email": "noreply@github.com",
-              "time": 1794498672000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794498760000
             },
             "branch": "main"
           },
@@ -94,24 +92,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/bd1527aede32a12cdd5d5593fde55e041dc94d48",
-            "commitHash": "bd1527aede32a12cdd5d5593fde55e041dc94d48",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43252270328"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/ebd52f9ac6d90c86d6ccf95e84d4d48678bb25da",
+            "commitHash": "ebd52f9ac6d90c86d6ccf95e84d4d48678bb25da",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43252540619"
           },
           "gitCommit": {
-            "shortHash": "bd1527a",
-            "hash": "bd1527aede32a12cdd5d5593fde55e041dc94d48",
-            "subject": "Set default admin username and password",
-            "body": "Set default admin username and password\n\nUpdated admin credentials in the .env.example file.",
+            "shortHash": "ebd52f9",
+            "hash": "ebd52f9ac6d90c86d6ccf95e84d4d48678bb25da",
+            "subject": "fix: handle missing storageState (ENOENT) - create empty JSON + conditional config",
+            "body": "fix: handle missing storageState (ENOENT) - create empty JSON + conditional config\n",
             "author": {
-              "name": "budihardoni",
-              "email": "budi.hardoni@gmail.com",
-              "time": 1794498672000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794498758000
             },
             "committer": {
-              "name": "GitHub",
-              "email": "noreply@github.com",
-              "time": 1794498672000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794498760000
             },
             "branch": "main"
           },
@@ -209,20 +207,44 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 6,
+                  "duration": 53200,
                   "error": {
-                    "message": "Error: Error reading storage state from config/storage-superadmin.json:\nENOENT: no such file or directory, open 'config/storage-superadmin.json'",
-                    "stack": "Error: Error reading storage state from config/storage-superadmin.json:\nENOENT: no such file or directory, open 'config/storage-superadmin.json'"
+                    "message": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"username\"], input[name=\"email\"], input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" tabindex=\"-1\" data-search=\"search\" class=\"form-control input\" placeholder=\"Cari Menu ...\"/>\u001b[22m\n\u001b[2m    - fill(\"admin\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    30 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+                    "stack": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"username\"], input[name=\"email\"], input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" tabindex=\"-1\" data-search=\"search\" class=\"form-control input\" placeholder=\"Cari Menu ...\"/>\u001b[22m\n\u001b[2m    - fill(\"admin\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    30 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts:46:19",
+                    "location": {
+                      "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts",
+                      "column": 19,
+                      "line": 46
+                    },
+                    "snippet": "  44 |   const passField = page.locator('input[name=\"password\"], input[type=\"password\"]').first();\n  45 |   \n> 46 |   await userField.fill(username);\n     |                   ^\n  47 |   await passField.fill(password);\n  48 |\n  49 |   await page.locator('button:has-text(\"Login\"), button[type=\"submit\"]').first().click();"
                   },
                   "errors": [
                     {
-                      "message": "Error: Error reading storage state from config/storage-superadmin.json:\nENOENT: no such file or directory, open 'config/storage-superadmin.json'"
+                      "location": {
+                        "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts",
+                        "column": 19,
+                        "line": 46
+                      },
+                      "message": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"username\"], input[name=\"email\"], input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" tabindex=\"-1\" data-search=\"search\" class=\"form-control input\" placeholder=\"Cari Menu ...\"/>\u001b[22m\n\u001b[2m    - fill(\"admin\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    30 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n  44 |   const passField = page.locator('input[name=\"password\"], input[type=\"password\"]').first();\n  45 |   \n> 46 |   await userField.fill(username);\n     |                   ^\n  47 |   await passField.fill(password);\n  48 |\n  49 |   await page.locator('button:has-text(\"Login\"), button[type=\"submit\"]').first().click();\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts:46:19"
                     }
                   ],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "[DEBUG] ENV check: BASE_URL=https://eazy-academic.btpdev.my.id, USERNAME exists=true, PASSWORD exists=true\n"
+                    },
+                    {
+                      "text": "[DEBUG] Available env keys: [\n  \u001b[32m'BASE_URL'\u001b[39m,\n  \u001b[32m'USER'\u001b[39m,\n  \u001b[32m'SUPERADMIN_PASSWORD'\u001b[39m,\n  \u001b[32m'ADMIN_PASSWORD'\u001b[39m,\n  \u001b[32m'GITHUB_BASE_REF'\u001b[39m,\n  \u001b[32m'SUPERADMIN_USERNAME'\u001b[39m,\n  \u001b[32m'GHCUP_INSTALL_BASE_PREFIX'\u001b[39m,\n  \u001b[32m'ADMIN_USERNAME'\u001b[39m\n]\n"
+                    },
+                    {
+                      "text": "[LOGIN] Mencoba login sebagai Super Admin: admin\n"
+                    },
+                    {
+                      "text": "[WARN] Selector password tidak muncul, coba tunggu 5 detik lagi (CF challenge)\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-12T15:51:45.058Z",
+                  "startTime": "2026-11-12T15:53:34.193Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -230,26 +252,55 @@
                       "contentType": "text/markdown",
                       "path": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/test-results/auth.setup.ts-authenticate-as-super-admin-super-admin/error-context.md"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts",
+                    "column": 19,
+                    "line": 46
+                  }
                 },
                 {
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 7,
+                  "duration": 52300,
                   "error": {
-                    "message": "Error: Error reading storage state from config/storage-superadmin.json:\nENOENT: no such file or directory, open 'config/storage-superadmin.json'",
-                    "stack": "Error: Error reading storage state from config/storage-superadmin.json:\nENOENT: no such file or directory, open 'config/storage-superadmin.json'"
+                    "message": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"username\"], input[name=\"email\"], input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" tabindex=\"-1\" data-search=\"search\" class=\"form-control input\" placeholder=\"Cari Menu ...\"/>\u001b[22m\n\u001b[2m    - fill(\"admin\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    29 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+                    "stack": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"username\"], input[name=\"email\"], input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" tabindex=\"-1\" data-search=\"search\" class=\"form-control input\" placeholder=\"Cari Menu ...\"/>\u001b[22m\n\u001b[2m    - fill(\"admin\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    29 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts:46:19",
+                    "location": {
+                      "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts",
+                      "column": 19,
+                      "line": 46
+                    },
+                    "snippet": "  44 |   const passField = page.locator('input[name=\"password\"], input[type=\"password\"]').first();\n  45 |   \n> 46 |   await userField.fill(username);\n     |                   ^\n  47 |   await passField.fill(password);\n  48 |\n  49 |   await page.locator('button:has-text(\"Login\"), button[type=\"submit\"]').first().click();"
                   },
                   "errors": [
                     {
-                      "message": "Error: Error reading storage state from config/storage-superadmin.json:\nENOENT: no such file or directory, open 'config/storage-superadmin.json'"
+                      "location": {
+                        "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts",
+                        "column": 19,
+                        "line": 46
+                      },
+                      "message": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"username\"], input[name=\"email\"], input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" tabindex=\"-1\" data-search=\"search\" class=\"form-control input\" placeholder=\"Cari Menu ...\"/>\u001b[22m\n\u001b[2m    - fill(\"admin\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    29 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n  44 |   const passField = page.locator('input[name=\"password\"], input[type=\"password\"]').first();\n  45 |   \n> 46 |   await userField.fill(username);\n     |                   ^\n  47 |   await passField.fill(password);\n  48 |\n  49 |   await page.locator('button:has-text(\"Login\"), button[type=\"submit\"]').first().click();\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts:46:19"
                     }
                   ],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "[DEBUG] ENV check: BASE_URL=https://eazy-academic.btpdev.my.id, USERNAME exists=true, PASSWORD exists=true\n"
+                    },
+                    {
+                      "text": "[DEBUG] Available env keys: [\n  \u001b[32m'BASE_URL'\u001b[39m,\n  \u001b[32m'USER'\u001b[39m,\n  \u001b[32m'SUPERADMIN_PASSWORD'\u001b[39m,\n  \u001b[32m'ADMIN_PASSWORD'\u001b[39m,\n  \u001b[32m'GITHUB_BASE_REF'\u001b[39m,\n  \u001b[32m'SUPERADMIN_USERNAME'\u001b[39m,\n  \u001b[32m'GHCUP_INSTALL_BASE_PREFIX'\u001b[39m,\n  \u001b[32m'ADMIN_USERNAME'\u001b[39m\n]\n"
+                    },
+                    {
+                      "text": "[LOGIN] Mencoba login sebagai Super Admin: admin\n"
+                    },
+                    {
+                      "text": "[WARN] Selector password tidak muncul, coba tunggu 5 detik lagi (CF challenge)\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-11-12T15:51:45.658Z",
+                  "startTime": "2026-11-12T15:54:28.156Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -262,7 +313,12 @@
                       "contentType": "application/zip",
                       "path": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/test-results/auth.setup.ts-authenticate-as-super-admin-super-admin-retry1/trace.zip"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts",
+                    "column": 19,
+                    "line": 46
+                  }
                 }
               ],
               "status": "unexpected"
@@ -274,15 +330,265 @@
           "column": 1
         }
       ]
+    },
+    {
+      "title": "crawler.spec.ts",
+      "file": "crawler.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Eazy Academic - Full Screenshot Crawl",
+          "file": "crawler.spec.ts",
+          "line": 94,
+          "column": 6,
+          "specs": [
+            {
+              "title": "01 - Login & validation states",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "super-admin",
+                  "projectName": "super-admin",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 25568,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Login\")')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Login\")')\u001b[22m\n\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts:105:52",
+                        "location": {
+                          "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts",
+                          "column": 52,
+                          "line": 105
+                        },
+                        "snippet": "  103 |     \n  104 |     // capture validation: klik login kosong\n> 105 |     await page.locator('button:has-text(\"Login\")').click();\n      |                                                    ^\n  106 |     await page.waitForTimeout(800);\n  107 |     await shot(page, 'screenshots/01_login/login_validation_error.png');\n  108 |   });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts",
+                            "column": 52,
+                            "line": 105
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Login\")')\u001b[22m\n\n\n  103 |     \n  104 |     // capture validation: klik login kosong\n> 105 |     await page.locator('button:has-text(\"Login\")').click();\n      |                                                    ^\n  106 |     await page.waitForTimeout(800);\n  107 |     await shot(page, 'screenshots/01_login/login_validation_error.png');\n  108 |   });\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts:105:52"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "📸 screenshots/01_login/login.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-12T15:55:21.546Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/test-results/crawler-Eazy-Academic---Fu-d0f19-1---Login-validation-states-super-admin/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts",
+                        "column": 52,
+                        "line": 105
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 26553,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Login\")')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Login\")')\u001b[22m\n\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts:105:52",
+                        "location": {
+                          "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts",
+                          "column": 52,
+                          "line": 105
+                        },
+                        "snippet": "  103 |     \n  104 |     // capture validation: klik login kosong\n> 105 |     await page.locator('button:has-text(\"Login\")').click();\n      |                                                    ^\n  106 |     await page.waitForTimeout(800);\n  107 |     await shot(page, 'screenshots/01_login/login_validation_error.png');\n  108 |   });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts",
+                            "column": 52,
+                            "line": 105
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Login\")')\u001b[22m\n\n\n  103 |     \n  104 |     // capture validation: klik login kosong\n> 105 |     await page.locator('button:has-text(\"Login\")').click();\n      |                                                    ^\n  106 |     await page.waitForTimeout(800);\n  107 |     await shot(page, 'screenshots/01_login/login_validation_error.png');\n  108 |   });\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts:105:52"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "📸 screenshots/01_login/login.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-12T15:55:47.864Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/test-results/crawler-Eazy-Academic---Fu-d0f19-1---Login-validation-states-super-admin-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/test-results/crawler-Eazy-Academic---Fu-d0f19-1---Login-validation-states-super-admin-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts",
+                        "column": 52,
+                        "line": 105
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e374d865165a01102163-c8db41f0ce8cd102e7b6",
+              "file": "crawler.spec.ts",
+              "line": 100,
+              "column": 3
+            },
+            {
+              "title": "02 - Dashboard & navigasi",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "super-admin",
+                  "projectName": "super-admin",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1442,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "📸 screenshots/02_dashboard/dashboard.png\n"
+                        },
+                        {
+                          "text": "Found 0 menu URLs\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-12T15:56:15.578Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e374d865165a01102163-c9ecc000ae33cb6d93b9",
+              "file": "crawler.spec.ts",
+              "line": 110,
+              "column": 3
+            },
+            {
+              "title": "03 - Crawl semua menu & submenu (otomatis)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "super-admin",
+                  "projectName": "super-admin",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1120,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Crawling 0 pages...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-12T15:56:17.128Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e374d865165a01102163-38f56b28b020ff20610f",
+              "file": "crawler.spec.ts",
+              "line": 139,
+              "column": 3
+            },
+            {
+              "title": "04 - Workflow & filter states",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "super-admin",
+                  "projectName": "super-admin",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1099,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-12T15:56:18.267Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e374d865165a01102163-754c647faa3799c56f3f",
+              "file": "crawler.spec.ts",
+              "line": 207,
+              "column": 3
+            }
+          ]
+        }
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-12T15:51:44.595Z",
-    "duration": 1190.286,
-    "expected": 0,
+    "startTime": "2026-11-12T15:53:33.645Z",
+    "duration": 165773.852,
+    "expected": 3,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 2,
     "flaky": 0
   }
 }
