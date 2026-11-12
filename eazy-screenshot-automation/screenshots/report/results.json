@@ -20,24 +20,24 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/budihardoni/screenshot/commit/fb3353a75c7febec4146bec65840586e61ab5382",
-        "commitHash": "fb3353a75c7febec4146bec65840586e61ab5382",
-        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43247428350"
+        "commitHref": "https://github.com/budihardoni/screenshot/commit/4054d7ae82ee21b4f5e8080569fcadaca173c542",
+        "commitHash": "4054d7ae82ee21b4f5e8080569fcadaca173c542",
+        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43248325686"
       },
       "gitCommit": {
-        "shortHash": "fb3353a",
-        "hash": "fb3353a75c7febec4146bec65840586e61ab5382",
-        "subject": "chore: update screenshots [run 4]",
-        "body": "chore: update screenshots [run 4]\n",
+        "shortHash": "4054d7a",
+        "hash": "4054d7ae82ee21b4f5e8080569fcadaca173c542",
+        "subject": "debug: add Secrets check + better auth error logging to diagnose failure",
+        "body": "debug: add Secrets check + better auth error logging to diagnose failure\n",
         "author": {
-          "name": "screenshot-bot",
-          "email": "bot@eazy.local",
-          "time": 1794497045000
+          "name": "Arena Agent",
+          "email": "arena@eazy.local",
+          "time": 1794497356000
         },
         "committer": {
-          "name": "screenshot-bot",
-          "email": "bot@eazy.local",
-          "time": 1794497045000
+          "name": "Arena Agent",
+          "email": "arena@eazy.local",
+          "time": 1794497360000
         },
         "branch": "main"
       }
@@ -50,24 +50,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/fb3353a75c7febec4146bec65840586e61ab5382",
-            "commitHash": "fb3353a75c7febec4146bec65840586e61ab5382",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43247428350"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/4054d7ae82ee21b4f5e8080569fcadaca173c542",
+            "commitHash": "4054d7ae82ee21b4f5e8080569fcadaca173c542",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43248325686"
           },
           "gitCommit": {
-            "shortHash": "fb3353a",
-            "hash": "fb3353a75c7febec4146bec65840586e61ab5382",
-            "subject": "chore: update screenshots [run 4]",
-            "body": "chore: update screenshots [run 4]\n",
+            "shortHash": "4054d7a",
+            "hash": "4054d7ae82ee21b4f5e8080569fcadaca173c542",
+            "subject": "debug: add Secrets check + better auth error logging to diagnose failure",
+            "body": "debug: add Secrets check + better auth error logging to diagnose failure\n",
             "author": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794497045000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794497356000
             },
             "committer": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794497045000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794497360000
             },
             "branch": "main"
           }
@@ -91,24 +91,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/fb3353a75c7febec4146bec65840586e61ab5382",
-            "commitHash": "fb3353a75c7febec4146bec65840586e61ab5382",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43247428350"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/4054d7ae82ee21b4f5e8080569fcadaca173c542",
+            "commitHash": "4054d7ae82ee21b4f5e8080569fcadaca173c542",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43248325686"
           },
           "gitCommit": {
-            "shortHash": "fb3353a",
-            "hash": "fb3353a75c7febec4146bec65840586e61ab5382",
-            "subject": "chore: update screenshots [run 4]",
-            "body": "chore: update screenshots [run 4]\n",
+            "shortHash": "4054d7a",
+            "hash": "4054d7ae82ee21b4f5e8080569fcadaca173c542",
+            "subject": "debug: add Secrets check + better auth error logging to diagnose failure",
+            "body": "debug: add Secrets check + better auth error logging to diagnose failure\n",
             "author": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794497045000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794497356000
             },
             "committer": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794497045000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794497360000
             },
             "branch": "main"
           }
@@ -190,8 +190,8 @@
     }
   ],
   "stats": {
-    "startTime": "2026-11-12T15:24:55.234Z",
-    "duration": 21.508000000000038,
+    "startTime": "2026-11-12T15:30:00.197Z",
+    "duration": 23.041000000000054,
     "expected": 0,
     "skipped": 0,
     "unexpected": 0,
