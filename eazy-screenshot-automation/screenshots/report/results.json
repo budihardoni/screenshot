@@ -19,24 +19,24 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/budihardoni/screenshot/commit/cdb67f7e8dcc99c1ff2df493ddf37835f6040f43",
-        "commitHash": "cdb67f7e8dcc99c1ff2df493ddf37835f6040f43",
-        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43253319118"
+        "commitHref": "https://github.com/budihardoni/screenshot/commit/7b9f9b0ec4aa631f65929a8fa60086384ebb4242",
+        "commitHash": "7b9f9b0ec4aa631f65929a8fa60086384ebb4242",
+        "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43254634595"
       },
       "gitCommit": {
-        "shortHash": "cdb67f7",
-        "hash": "cdb67f7e8dcc99c1ff2df493ddf37835f6040f43",
-        "subject": "chore: update screenshots [run 15]",
-        "body": "chore: update screenshots [run 15]\n",
+        "shortHash": "7b9f9b0",
+        "hash": "7b9f9b0ec4aa631f65929a8fa60086384ebb4242",
+        "subject": "fix: handle WAF + selectors (rebase)",
+        "body": "fix: handle WAF + selectors (rebase)\n",
         "author": {
-          "name": "screenshot-bot",
-          "email": "bot@eazy.local",
-          "time": 1794498981000
+          "name": "Arena Agent",
+          "email": "arena@eazy.local",
+          "time": 1794499455000
         },
         "committer": {
-          "name": "screenshot-bot",
-          "email": "bot@eazy.local",
-          "time": 1794498981000
+          "name": "Arena Agent",
+          "email": "arena@eazy.local",
+          "time": 1794499455000
         },
         "branch": "main"
       },
@@ -50,24 +50,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/cdb67f7e8dcc99c1ff2df493ddf37835f6040f43",
-            "commitHash": "cdb67f7e8dcc99c1ff2df493ddf37835f6040f43",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43253319118"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/7b9f9b0ec4aa631f65929a8fa60086384ebb4242",
+            "commitHash": "7b9f9b0ec4aa631f65929a8fa60086384ebb4242",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43254634595"
           },
           "gitCommit": {
-            "shortHash": "cdb67f7",
-            "hash": "cdb67f7e8dcc99c1ff2df493ddf37835f6040f43",
-            "subject": "chore: update screenshots [run 15]",
-            "body": "chore: update screenshots [run 15]\n",
+            "shortHash": "7b9f9b0",
+            "hash": "7b9f9b0ec4aa631f65929a8fa60086384ebb4242",
+            "subject": "fix: handle WAF + selectors (rebase)",
+            "body": "fix: handle WAF + selectors (rebase)\n",
             "author": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794498981000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794499455000
             },
             "committer": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794498981000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794499455000
             },
             "branch": "main"
           },
@@ -92,24 +92,24 @@
         "retries": 1,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/budihardoni/screenshot/commit/cdb67f7e8dcc99c1ff2df493ddf37835f6040f43",
-            "commitHash": "cdb67f7e8dcc99c1ff2df493ddf37835f6040f43",
-            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43253319118"
+            "commitHref": "https://github.com/budihardoni/screenshot/commit/7b9f9b0ec4aa631f65929a8fa60086384ebb4242",
+            "commitHash": "7b9f9b0ec4aa631f65929a8fa60086384ebb4242",
+            "buildHref": "https://github.com/budihardoni/screenshot/actions/runs/43254634595"
           },
           "gitCommit": {
-            "shortHash": "cdb67f7",
-            "hash": "cdb67f7e8dcc99c1ff2df493ddf37835f6040f43",
-            "subject": "chore: update screenshots [run 15]",
-            "body": "chore: update screenshots [run 15]\n",
+            "shortHash": "7b9f9b0",
+            "hash": "7b9f9b0ec4aa631f65929a8fa60086384ebb4242",
+            "subject": "fix: handle WAF + selectors (rebase)",
+            "body": "fix: handle WAF + selectors (rebase)\n",
             "author": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794498981000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794499455000
             },
             "committer": {
-              "name": "screenshot-bot",
-              "email": "bot@eazy.local",
-              "time": 1794498981000
+              "name": "Arena Agent",
+              "email": "arena@eazy.local",
+              "time": 1794499455000
             },
             "branch": "main"
           },
@@ -207,25 +207,25 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 53312,
+                  "duration": 77601,
                   "error": {
-                    "message": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"username\"], input[name=\"email\"], input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" tabindex=\"-1\" data-search=\"search\" class=\"form-control input\" placeholder=\"Cari Menu ...\"/>\u001b[22m\n\u001b[2m    - fill(\"admin\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    30 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
-                    "stack": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"username\"], input[name=\"email\"], input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" tabindex=\"-1\" data-search=\"search\" class=\"form-control input\" placeholder=\"Cari Menu ...\"/>\u001b[22m\n\u001b[2m    - fill(\"admin\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    30 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts:46:19",
+                    "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#username, input[name=\"username\"]').first() to be visible\u001b[22m\n",
+                    "stack": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#username, input[name=\"username\"]').first() to be visible\u001b[22m\n\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts:53:19",
                     "location": {
                       "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts",
                       "column": 19,
-                      "line": 46
+                      "line": 53
                     },
-                    "snippet": "  44 |   const passField = page.locator('input[name=\"password\"], input[type=\"password\"]').first();\n  45 |   \n> 46 |   await userField.fill(username);\n     |                   ^\n  47 |   await passField.fill(password);\n  48 |\n  49 |   await page.locator('button:has-text(\"Login\"), button[type=\"submit\"]').first().click();"
+                    "snippet": "  51 |   const passField = page.locator('#password, input[name=\"password\"]').first();\n  52 |   \n> 53 |   await userField.waitFor({ state: 'visible', timeout: 10000 });\n     |                   ^\n  54 |   await userField.fill(username);\n  55 |   await passField.fill(password);\n  56 |   console.log('[INFO] Kredensial terisi');"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts",
                         "column": 19,
-                        "line": 46
+                        "line": 53
                       },
-                      "message": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"username\"], input[name=\"email\"], input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" tabindex=\"-1\" data-search=\"search\" class=\"form-control input\" placeholder=\"Cari Menu ...\"/>\u001b[22m\n\u001b[2m    - fill(\"admin\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    30 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n  44 |   const passField = page.locator('input[name=\"password\"], input[type=\"password\"]').first();\n  45 |   \n> 46 |   await userField.fill(username);\n     |                   ^\n  47 |   await passField.fill(password);\n  48 |\n  49 |   await page.locator('button:has-text(\"Login\"), button[type=\"submit\"]').first().click();\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts:46:19"
+                      "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#username, input[name=\"username\"]').first() to be visible\u001b[22m\n\n\n  51 |   const passField = page.locator('#password, input[name=\"password\"]').first();\n  52 |   \n> 53 |   await userField.waitFor({ state: 'visible', timeout: 10000 });\n     |                   ^\n  54 |   await userField.fill(username);\n  55 |   await passField.fill(password);\n  56 |   console.log('[INFO] Kredensial terisi');\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts:53:19"
                     }
                   ],
                   "stdout": [
@@ -239,12 +239,24 @@
                       "text": "[LOGIN] Mencoba login sebagai Super Admin: admin\n"
                     },
                     {
+                      "text": "[INFO] Current URL after goto: https://eazy-academic.btpdev.my.id/\n"
+                    },
+                    {
+                      "text": "[INFO] After WAF wait URL: https://eazy-academic.btpdev.my.id/\n"
+                    },
+                    {
                       "text": "[WARN] Selector password tidak muncul, coba tunggu 5 detik lagi (CF challenge)\n"
+                    },
+                    {
+                      "text": "[DEBUG] Page content length: \u001b[33m355914\u001b[39m snippet: <!DOCTYPE html><html class=\"loaded\" lang=\"en\" data-textdirection=\"ltr\" style=\"--vh: 9px;\"><head><style id=\"apexcharts-css\">@keyframes opaque{0%{opacity:0}to{opacity:1}}.apexcharts-canvas{position:relative;direction:ltr!important;user-select:none;--apexcharts-focus-color: #008FFB}.apexcharts-canvas .apexcharts-theme-dark,.apexcharts-theme-dark.apexcharts-canvas{--apexcharts-focus-color: #FFD500}.apexcharts-canvas.apexcharts-high-contrast,.apexcharts-high-contrast.apexcharts-canvas{--apexcharts-fo\n"
+                    },
+                    {
+                      "text": "[WARN] #username masih tidak ada\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-12T15:57:42.201Z",
+                  "startTime": "2026-11-12T16:05:04.610Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -256,32 +268,32 @@
                   "errorLocation": {
                     "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts",
                     "column": 19,
-                    "line": 46
+                    "line": 53
                   }
                 },
                 {
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 54061,
+                  "duration": 77348,
                   "error": {
-                    "message": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"username\"], input[name=\"email\"], input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" tabindex=\"-1\" data-search=\"search\" class=\"form-control input\" placeholder=\"Cari Menu ...\"/>\u001b[22m\n\u001b[2m    - fill(\"admin\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    30 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
-                    "stack": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"username\"], input[name=\"email\"], input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" tabindex=\"-1\" data-search=\"search\" class=\"form-control input\" placeholder=\"Cari Menu ...\"/>\u001b[22m\n\u001b[2m    - fill(\"admin\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    30 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts:46:19",
+                    "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#username, input[name=\"username\"]').first() to be visible\u001b[22m\n",
+                    "stack": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#username, input[name=\"username\"]').first() to be visible\u001b[22m\n\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts:53:19",
                     "location": {
                       "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts",
                       "column": 19,
-                      "line": 46
+                      "line": 53
                     },
-                    "snippet": "  44 |   const passField = page.locator('input[name=\"password\"], input[type=\"password\"]').first();\n  45 |   \n> 46 |   await userField.fill(username);\n     |                   ^\n  47 |   await passField.fill(password);\n  48 |\n  49 |   await page.locator('button:has-text(\"Login\"), button[type=\"submit\"]').first().click();"
+                    "snippet": "  51 |   const passField = page.locator('#password, input[name=\"password\"]').first();\n  52 |   \n> 53 |   await userField.waitFor({ state: 'visible', timeout: 10000 });\n     |                   ^\n  54 |   await userField.fill(username);\n  55 |   await passField.fill(password);\n  56 |   console.log('[INFO] Kredensial terisi');"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts",
                         "column": 19,
-                        "line": 46
+                        "line": 53
                       },
-                      "message": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"username\"], input[name=\"email\"], input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" tabindex=\"-1\" data-search=\"search\" class=\"form-control input\" placeholder=\"Cari Menu ...\"/>\u001b[22m\n\u001b[2m    - fill(\"admin\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    30 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n  44 |   const passField = page.locator('input[name=\"password\"], input[type=\"password\"]').first();\n  45 |   \n> 46 |   await userField.fill(username);\n     |                   ^\n  47 |   await passField.fill(password);\n  48 |\n  49 |   await page.locator('button:has-text(\"Login\"), button[type=\"submit\"]').first().click();\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts:46:19"
+                      "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#username, input[name=\"username\"]').first() to be visible\u001b[22m\n\n\n  51 |   const passField = page.locator('#password, input[name=\"password\"]').first();\n  52 |   \n> 53 |   await userField.waitFor({ state: 'visible', timeout: 10000 });\n     |                   ^\n  54 |   await userField.fill(username);\n  55 |   await passField.fill(password);\n  56 |   console.log('[INFO] Kredensial terisi');\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts:53:19"
                     }
                   ],
                   "stdout": [
@@ -295,12 +307,24 @@
                       "text": "[LOGIN] Mencoba login sebagai Super Admin: admin\n"
                     },
                     {
+                      "text": "[INFO] Current URL after goto: https://eazy-academic.btpdev.my.id/\n"
+                    },
+                    {
+                      "text": "[INFO] After WAF wait URL: https://eazy-academic.btpdev.my.id/\n"
+                    },
+                    {
                       "text": "[WARN] Selector password tidak muncul, coba tunggu 5 detik lagi (CF challenge)\n"
+                    },
+                    {
+                      "text": "[DEBUG] Page content length: \u001b[33m355908\u001b[39m snippet: <!DOCTYPE html><html class=\"loaded\" lang=\"en\" data-textdirection=\"ltr\" style=\"--vh: 9px;\"><head><style id=\"apexcharts-css\">@keyframes opaque{0%{opacity:0}to{opacity:1}}.apexcharts-canvas{position:relative;direction:ltr!important;user-select:none;--apexcharts-focus-color: #008FFB}.apexcharts-canvas .apexcharts-theme-dark,.apexcharts-theme-dark.apexcharts-canvas{--apexcharts-focus-color: #FFD500}.apexcharts-canvas.apexcharts-high-contrast,.apexcharts-high-contrast.apexcharts-canvas{--apexcharts-fo\n"
+                    },
+                    {
+                      "text": "[WARN] #username masih tidak ada\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-11-12T15:58:35.971Z",
+                  "startTime": "2026-11-12T16:06:22.945Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -317,7 +341,7 @@
                   "errorLocation": {
                     "file": "/home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/auth.setup.ts",
                     "column": 19,
-                    "line": 46
+                    "line": 53
                   }
                 }
               ],
@@ -360,7 +384,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 25211,
+                      "duration": 27208,
                       "error": {
                         "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Login\")')\u001b[22m\n",
                         "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Login\")')\u001b[22m\n\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts:105:52",
@@ -388,7 +412,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-12T15:59:30.707Z",
+                      "startTime": "2026-11-12T16:07:41.415Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -407,7 +431,7 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 26881,
+                      "duration": 26266,
                       "error": {
                         "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Login\")')\u001b[22m\n",
                         "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Login\")')\u001b[22m\n\n    at /home/runner/work/screenshot/screenshot/eazy-screenshot-automation/src/crawler.spec.ts:105:52",
@@ -435,7 +459,7 @@
                       ],
                       "stderr": [],
                       "retry": 1,
-                      "startTime": "2026-11-12T15:59:56.375Z",
+                      "startTime": "2026-11-12T16:08:09.368Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -480,7 +504,7 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1342,
+                      "duration": 1488,
                       "errors": [],
                       "stdout": [
                         {
@@ -492,7 +516,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-12T16:00:23.979Z",
+                      "startTime": "2026-11-12T16:08:36.829Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -521,7 +545,7 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 482,
+                      "duration": 576,
                       "errors": [],
                       "stdout": [
                         {
@@ -530,7 +554,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-12T16:00:25.387Z",
+                      "startTime": "2026-11-12T16:08:38.432Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -559,12 +583,12 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1060,
+                      "duration": 569,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-12T16:00:25.878Z",
+                      "startTime": "2026-11-12T16:08:39.026Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -584,8 +608,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-12T15:57:41.838Z",
-    "duration": 165137.152,
+    "startTime": "2026-11-12T16:05:04.049Z",
+    "duration": 215596.92200000002,
     "expected": 3,
     "skipped": 0,
     "unexpected": 2,
