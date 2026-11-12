@@ -37,7 +37,10 @@ jobs:
           echo "If any is NO, cek Settings > Secrets > Actions - nama harus exact: SUPERADMIN_USERNAME, SUPERADMIN_PASSWORD, BASE_URL"
 
       - name: Prepare storage folder
-        run: mkdir -p eazy-screenshot-automation/config
+        run: |
+          mkdir -p eazy-screenshot-automation/config
+          echo '{"cookies":[],"origins":[]}' > eazy-screenshot-automation/config/storage-superadmin.json
+          cat eazy-screenshot-automation/config/storage-superadmin.json
 
       - name: Auth setup (Super Admin login)
 

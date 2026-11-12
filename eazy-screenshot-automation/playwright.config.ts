@@ -1,4 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
+import * as fs from 'fs';
 import * as dotenv from 'dotenv';
 dotenv.config();
 
@@ -34,7 +35,7 @@ export default defineConfig({
       name: 'super-admin',
       use: { 
         ...devices['Desktop Chrome'], 
-        storageState: 'config/storage-superadmin.json',
+        storageState: fs.existsSync('config/storage-superadmin.json') ? 'config/storage-superadmin.json' : undefined,
         viewport: { width: 1440, height: 900 }
       },
     },
