@@ -36,6 +36,9 @@ jobs:
           echo "SUPERADMIN_PASSWORD is set: $([ -n "$SUPERADMIN_PASSWORD" ] && echo YES || echo NO)"
           echo "If any is NO, cek Settings > Secrets > Actions - nama harus exact: SUPERADMIN_USERNAME, SUPERADMIN_PASSWORD, BASE_URL"
 
+      - name: Prepare storage folder
+        run: mkdir -p eazy-screenshot-automation/config
+
       - name: Auth setup (Super Admin login)
 
         working-directory: eazy-screenshot-automation
